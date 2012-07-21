@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="defaultTemplate" template="/WEB-INF/views/layout/template.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/layout/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+	</definition>       
+
+
+
+
+
+	<definition name="usuarios/index" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/usuarios/index.jsp" />
+	</definition>
+        
+        <definition name="usuarios/new" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/usuarios/new.jsp"/>
+        </definition>
+        
+        <definition name="usuarios/edit" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/usuarios/edit.jsp"/>
+        </definition>
+        
+        <definition name="usuarios/login" template="/WEB-INF/views/layout/login.jsp">
+            <put-attribute name="body" value="/WEB-INF/views/usuarios/login.jsp"/>
+            <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+        </definition>
+
+        
+        
+        
+             
+        
+   
+	<definition name="locales/index" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/locales/index.jsp" />
+	</definition>
+        
+        <definition name="locales/new" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/locales/new.jsp"/>
+        </definition>
+        
+        <definition name="locales/edit" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/locales/edit.jsp"/>
+        </definition>
+        
+        <definition name="locales/login" template="/WEB-INF/views/layout/login.jsp">
+            <put-attribute name="body" value="/WEB-INF/views/locales/login.jsp"/>
+            <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+        </definition>   
+      
+
+	<definition name="citas/index" extends="defaultTemplate">
+	     <put-attribute name="body" value="/WEB-INF/views/citas/index.jsp" />
+	</definition>  
+        
+        <definition name="citas/edit" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/citas/edit.jsp"/>
+        </definition>
+        
+
+	<definition name="inmuebles/index" extends="defaultTemplate">
+	     <put-attribute name="body" value="/WEB-INF/views/inmuebles/index.jsp" />
+	</definition>
+
+        <definition name="inmuebles/indexcomenta" extends="defaultTemplate">
+		<put-attribute name="header" value="/WEB-INF/views/inmuebles/header_navegante.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/inmuebles/indexcomenta.jsp" />
+	</definition>   
+         
+         
+         
+         <definition name="inmuebles/editcomenta" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/inmuebles/editcomenta.jsp"/>
+        </definition>       
+        
+        
+        <definition name="inmuebles/compra" extends="defaultTemplate">
+		<put-attribute name="header" value="/WEB-INF/views/inmuebles/header_navegante.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/inmuebles/indexcomenta.jsp" />
+        </definition>
+        
+        <definition name="inmuebles/venta" extends="defaultTemplate">
+		<put-attribute name="header" value="/WEB-INF/views/inmuebles/header_navegante.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/inmuebles/venta.jsp" />
+        </definition>
+        
+        <definition name="inmuebles/new" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/inmuebles/new.jsp"/>
+        </definition>
+        
+        <definition name="inmuebles/edit" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/inmuebles/edit.jsp"/>
+        </definition>
+      
+        <definition name="inmuebles/login" template="/WEB-INF/views/layout/login.jsp">
+            <put-attribute name="body" value="/WEB-INF/views/inmuebles/login.jsp"/>
+            <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+        </definition>
+
+                
+                
+                
+                
+        
+  
+	<definition name="servicios/index" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/servicios/index.jsp" />
+	</definition>
+        
+        <definition name="servicios/new" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/servicios/new.jsp"/>
+        </definition>
+        
+        <definition name="servicios/edit" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/servicios/edit.jsp"/>
+        </definition>
+        
+        <definition name="servicios/login" template="/WEB-INF/views/layout/login.jsp">
+            <put-attribute name="body" value="/WEB-INF/views/servicios/login.jsp"/>
+            <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+        </definition>
+            
+            
+            
+        
+	<definition name="publicidades/index" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/publicidades/index.jsp" />
+	</definition>
+        
+        <definition name="publicidades/new" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/publicidades/new.jsp"/>
+        </definition>
+        
+        <definition name="publicidades/edit" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/publicidades/edit.jsp"/>
+        </definition>
+        
+        <definition name="publicidades/login" template="/WEB-INF/views/layout/login.jsp">
+            <put-attribute name="body" value="/WEB-INF/views/publicidades/login.jsp"/>
+            <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+        </definition>
+                   
+        
+        
+        
+         
+        
+	<definition name="eventos/index" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/eventos/index.jsp" />
+	</definition>
+        
+        <definition name="eventos/new" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/eventos/new.jsp"/>
+        </definition>
+        
+        <definition name="eventos/edit" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/eventos/edit.jsp"/>
+        </definition>
+        
+        <definition name="eventos/login" template="/WEB-INF/views/layout/login.jsp">
+            <put-attribute name="body" value="/WEB-INF/views/eventos/login.jsp"/>
+            <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+        </definition>
+                   
+        
+        
+        
+        
+        
+</tiles-definitions>
