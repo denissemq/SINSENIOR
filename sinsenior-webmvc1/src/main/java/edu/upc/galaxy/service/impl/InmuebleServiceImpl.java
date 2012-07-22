@@ -30,30 +30,7 @@ public class InmuebleServiceImpl implements InmuebleService {
         return inmuebleDao.insertar(Inmueble);
     }
 
-    @Override
-	public List<DropDownList> buscarTipoInmueble() {
-        log.info("Buscando todas los tipos de Inmueble");
-        return inmuebleDao.buscarTipoInmueble();
-	}
-
-	@Override
-	public List<DropDownList> buscarDistrito() {
-        log.info("Buscando todas los distritos");
-        return inmuebleDao.buscarDistrito();
-	}
-
-	@Override
-	public List<DropDownList> buscarTipoPersona() {
-        log.info("Buscando todas los tipos de persona");
-        return inmuebleDao.buscarTipoPersona();
-	}
-
-	@Override
-	public List<DropDownList> buscarEstado() {
-        log.info("Buscando todas los estados");
-        return inmuebleDao.buscarEstado();
-	}
-
+   
     @Override
     public void actualizar(Inmueble Inmueble) {
         log.info("Actualizando Inmueble");

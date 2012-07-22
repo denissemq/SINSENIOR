@@ -9,10 +9,6 @@
 		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
 	</definition>       
 
-
-
-
-
 	<definition name="usuarios/index" extends="defaultTemplate">
 		<put-attribute name="body" value="/WEB-INF/views/usuarios/index.jsp" />
 	</definition>
@@ -54,14 +50,7 @@
         </definition>   
       
 
-	<definition name="citas/index" extends="defaultTemplate">
-	     <put-attribute name="body" value="/WEB-INF/views/citas/index.jsp" />
-	</definition>  
-        
-        <definition name="citas/edit" extends="defaultTemplate">
-            <put-attribute name="body" value="/WEB-INF/views/citas/edit.jsp"/>
-        </definition>
-        
+       
 
 	<definition name="inmuebles/index" extends="defaultTemplate">
 	     <put-attribute name="body" value="/WEB-INF/views/inmuebles/index.jsp" />
@@ -150,20 +139,23 @@
         
          
         
-	<definition name="eventos/index" extends="defaultTemplate">
-		<put-attribute name="body" value="/WEB-INF/views/eventos/index.jsp" />
+	<definition name="citas/pendientes" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/citas/pendientes.jsp" />
+	</definition>
+	<definition name="citas/disponibles" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/citas/disponibles.jsp" />
 	</definition>
         
-        <definition name="eventos/new" extends="defaultTemplate">
-            <put-attribute name="body" value="/WEB-INF/views/eventos/new.jsp"/>
+        <definition name="citas/new" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/citas/new.jsp"/>
         </definition>
         
-        <definition name="eventos/edit" extends="defaultTemplate">
-            <put-attribute name="body" value="/WEB-INF/views/eventos/edit.jsp"/>
+        <definition name="citas/edit" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/citas/edit.jsp"/>
         </definition>
         
-        <definition name="eventos/login" template="/WEB-INF/views/layout/login.jsp">
-            <put-attribute name="body" value="/WEB-INF/views/eventos/login.jsp"/>
+        <definition name="citas/login" template="/WEB-INF/views/layout/login.jsp">
+            <put-attribute name="body" value="/WEB-INF/views/citas/login.jsp"/>
             <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
         </definition>
                    

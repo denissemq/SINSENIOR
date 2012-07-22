@@ -16,7 +16,7 @@
 <div class="container">
     <h1 style="float:left;">Administrador de citas</h1>
     <div style="float:right;margin-bottom: 10px;">
-        <a href="<c:url value='/pages/citas/new'/>" class="btn btn-primary">Nueva cita</a>        
+     <%--    <a href="<c:url value='/pages/citas/new'/>" class="btn btn-primary">Nueva cita</a>   --%>      
     </div>
     <div class="clear"></div>
     <br/>

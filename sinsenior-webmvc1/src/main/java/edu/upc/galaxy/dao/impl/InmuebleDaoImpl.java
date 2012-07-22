@@ -3,7 +3,12 @@ package edu.upc.galaxy.dao.impl;
 import edu.upc.galaxy.dao.InmuebleDao;
 import edu.upc.galaxy.entity.DropDownList;
 import edu.upc.galaxy.entity.Inmueble;
+
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Locale;
+
 import javax.sql.DataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,10 +51,13 @@ public class InmuebleDaoImpl extends SimpleJdbcDaoSupport implements InmuebleDao
         Integer codigoautoPersona;
         codigoautoPersona=getSimpleJdbcTemplate().queryForInt("call identity()");
         log.info("codigoautoPersona" + codigoautoPersona.toString());
-        
+        SimpleDateFormat formateador = new SimpleDateFormat(
+        		"dd 'de' MMMM 'de' yyyy", new Locale("es_ES"));
+        		java.util.Date fechaDate = new java.util.Date();
+        		String fecha = formateador.format(fechaDate);
         getJdbcTemplate().update(
-                "insert into detalleSolicitud (codigoInmueble, codigoPersona, codigoEstado,activo) values (?, ?, ?, ?)",
-                codigoautoInmueble,codigoautoPersona,Inmueble.getEstado(),true);
+                "insert into detalleSolicitud (codigoInmueble, codigoPersona, codigoEstado,activo,credat) values (?, ?, ?, ?,?)",
+                codigoautoInmueble,codigoautoPersona,Inmueble.getEstado(),true,fecha);
 
         Integer codigoautoDetalle;
         codigoautoDetalle=getSimpleJdbcTemplate().queryForInt("call identity()");
@@ -81,34 +89,7 @@ public class InmuebleDaoImpl extends SimpleJdbcDaoSupport implements InmuebleDao
         }        
     }
     
-    @Override
-	public List<DropDownList> buscarTipoInmueble() {
-        log.info("Asignando el tipoInmueble");
-		 return getSimpleJdbcTemplate().query(
-                 "select codigo,descripcion from tipoInmueble",
-                 new BeanPropertyRowMapper<DropDownList>(DropDownList.class));
-	}
-
-	@Override
-	public List<DropDownList> buscarDistrito() {
-		 return getSimpleJdbcTemplate().query(
-                 "select codigo,descripcion from distrito",
-                 new BeanPropertyRowMapper<DropDownList>(DropDownList.class));
-	}
-
-	@Override
-	public List<DropDownList> buscarTipoPersona() {
-		 return getSimpleJdbcTemplate().query(
-                 "select codigo, descripcion from tipoPersona",
-                 new BeanPropertyRowMapper<DropDownList>(DropDownList.class));
-	}
-
-	@Override
-	public List<DropDownList> buscarEstado() {
-		 return getSimpleJdbcTemplate().query(
-                 "select codigo, descripcion from estado",
-                 new BeanPropertyRowMapper<DropDownList>(DropDownList.class));
-	}
+   
 
     @Override
     public List<Inmueble> buscarTodos() {

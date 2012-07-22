@@ -2,6 +2,7 @@ package edu.upc.galaxy.controller;
 
 import edu.upc.galaxy.entity.Credential;
 import edu.upc.galaxy.entity.Usuario;
+import edu.upc.galaxy.service.InmuebleService;
 import edu.upc.galaxy.service.UsuarioService;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
@@ -77,17 +78,23 @@ public class UsuarioController {
     }
     
     @RequestMapping("/usuarios/login")
-    public ModelAndView login() {
+    public ModelAndView login(HttpServletRequest request) {
         ModelAndView mav = new ModelAndView("usuarios/login");
         Credential credential = new Credential();
         mav.getModelMap().put("credential", credential);
+
+        request.getSession().setAttribute("listTipoInmueble",usuarioService.buscarTipoInmueble());
+        request.getSession().setAttribute("listDistrito",usuarioService.buscarDistrito());
+        request.getSession().setAttribute("listTipoPersona",usuarioService.buscarTipoPersona());
+        request.getSession().setAttribute("listTipoEstado",usuarioService.buscarEstado());
         return mav;
     }    
     
     @RequestMapping(value = "/usuarios/autenticar", method=RequestMethod.POST)
     public String autenticar(@ModelAttribute("credential") Credential credential,HttpServletRequest request) {
         if (usuarioService.autenticar(credential.getCorreo(), credential.getPassword())) {
-            request.getSession().setAttribute("credential",credential);
+        	Credential credential1= usuarioService.buscarxCorreo(credential.getCorreo());
+            request.getSession().setAttribute("credential",credential1);
             return "redirect:/pages/usuarios/index";
         }
         return "redirect:/pages/usuarios/login";

@@ -9,8 +9,17 @@ import java.io.Serializable;
 public class Credential implements Serializable {
     private String correo;
     private String password;
+    private String id;
 
-    public Credential() {}
+    public String getId() {
+		return id;
+	}
+
+	public void setId(String codigo) {
+		this.id = codigo;
+	}
+
+	public Credential() {}
 
     public Credential(String correo, String password) {
         this.correo = correo;

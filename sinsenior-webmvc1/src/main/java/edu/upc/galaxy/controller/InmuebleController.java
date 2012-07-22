@@ -34,7 +34,6 @@ public class InmuebleController {
 
     @Autowired
     private InmuebleService inmuebleService;
-    private DropDownListService dropDownListServ;
     
     private static Logger log = LoggerFactory.getLogger(InmuebleController.class);
 
@@ -54,12 +53,10 @@ public class InmuebleController {
     }
 
     @RequestMapping("/inmuebles/compra")
-    public ModelAndView compra(HttpServletRequest request) {
+    public ModelAndView compra() {
         ModelAndView mav = new ModelAndView("inmuebles/compra");
         List<Inmueble> inmuebles = inmuebleService.buscarTodos();
         mav.addObject("inmuebles", inmuebles);
-        request.getSession().setAttribute("listTipoInmueble",inmuebleService.buscarTipoInmueble());
-        request.getSession().setAttribute("listDistrito",inmuebleService.buscarDistrito());
         return mav;
     }
 
@@ -68,22 +65,11 @@ public class InmuebleController {
     	 ModelAndView mav = new ModelAndView("inmuebles/venta");
          Inmueble inmueble = new Inmueble();
          mav.getModelMap().put("inmuebles", inmueble);
-         request.getSession().setAttribute("listTipoInmueble",inmuebleService.buscarTipoInmueble());
-         request.getSession().setAttribute("listDistrito",inmuebleService.buscarDistrito());
-         request.getSession().setAttribute("listTipoPersona",inmuebleService.buscarTipoPersona());
          
          return mav;
     }
 
 
-    @RequestMapping("/citas/index")
-    public ModelAndView lista() {
-        ModelAndView mav = new ModelAndView("citas/index");
-        List<Inmueble> inmuebles = inmuebleService.buscarTodosActivos();
-        mav.addObject("inmuebles", inmuebles);
-        return mav;
-    }
-    
     @RequestMapping(value = "/inmuebles/new", method = RequestMethod.GET)
     public ModelAndView newinmueble() {
         ModelAndView mav = new ModelAndView("inmuebles/new");
@@ -99,13 +85,6 @@ public class InmuebleController {
         return "redirect:/pages/inmuebles/compra";
     }
     
-    @RequestMapping(value = "/citas/edit", method = RequestMethod.GET)
-    public ModelAndView editinmueble(@RequestParam("id")Integer id) {    
-        ModelAndView mav = new ModelAndView("citas/edit");
-        Inmueble inmueble = inmuebleService.buscar(id);
-        mav.getModelMap().put("inmuebles", inmueble);
-        return mav;        
-    }
     
     
     @RequestMapping(value = "/inmuebles/editcomenta", method = RequestMethod.GET)
@@ -116,13 +95,7 @@ public class InmuebleController {
         return mav;        
     }   
     
-    @RequestMapping(value="/citas/edit", method=RequestMethod.POST)
-    public String update(@ModelAttribute("inmueble") Inmueble inmueble, SessionStatus status) {
-        inmuebleService.actualizar(inmueble);
-        status.setComplete();
-        return "redirect:/pages/citas/edit";
-    }
-
+  
 /*     @RequestMapping(value="/inmuebles/editcomenta", method=RequestMethod.POST)
     public String update(@ModelAttribute("inmueble") inmueble inmueble, SessionStatus status) {
         inmuebleService.actualizar(inmueble);
@@ -140,7 +113,7 @@ public class InmuebleController {
     }
     
     @RequestMapping("/inmuebles/login")
-    public ModelAndView login() {
+    public ModelAndView login(HttpServletRequest request) {
         ModelAndView mav = new ModelAndView("inmuebles/login");
         Credential credential = new Credential();
         mav.getModelMap().put("credential", credential);

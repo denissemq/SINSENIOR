@@ -71,9 +71,10 @@ CREATE TABLE detalleSolicitud
         codigoUsuario int,
         codigoEstado int,
         observaciones varchar(1000),
-        fecha DATE,
+        fecha VARCHAR(45),
         lugar varchar(300),
-        activo BOOLEAN
+        activo BOOLEAN,
+        credat  varchar(1000)
 );
 
 
@@ -127,6 +128,16 @@ insert into distrito(codigo,descripcion)  values(34,'SURQUILLO');
 insert into distrito(codigo,descripcion)  values(35,'VENTANILLA');
 insert into distrito(codigo,descripcion)  values(36,'VILLA EL SAVADOR');
 insert into distrito(codigo,descripcion)  values(37,'VILLA MARÍA DEL TRIUNFO');
+
+insert into inmuebles (tipoInmueble, area, distrito,direccion,nroHab,nroBanos,hPatio,hJardin,observaciones) values (
+                1,2,36,'Jr. Arequipa 3866',3,4,true,false,'No hay observaciones');
+        
+insert into persona (tipoPersona, numRazSocial, docId,telefono,celular,correo) values (
+                1,'Denisse Marquez','44547116','5722280','998928431','dmc_24x2@hotmail.com');
+
+insert into detalleSolicitud (codigoInmueble, codigoPersona, codigoEstado,activo,credat) values (
+                0,0,2,true,'20/07/2012');
+
 
 
 

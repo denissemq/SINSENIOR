@@ -6,28 +6,117 @@
 
 <div class="container">
     <h1>Editar Citas</h1><br/><br/>
-    <form:form action="edit" method="post" commandName="inmuebles" cssClass="form-horizontal">
-        <div class="row">
-            <form:hidden path="id"></form:hidden>
-              <div class="control-group">
-                <label>Id:</label>
+    <form:form action="edit" method="post" commandName="cita" cssClass="form-horizontal">
+         <div class="row">
+            <div class="control-group">
                 <div class="controls">
-                    <form:input path="id"></form:input>
-                    <form:errors path="id" cssstyle="color:red"></form:errors>
+                    DATOS INMUEBLE
                 </div>
             </div>
+            
               <div class="control-group">
+                <label>Tipo  Estado:</label>
+                 <div class="controls">
+					<form:select path="codigoEstado" id="codigoEstado">
+					<form:options items="${listTipoEstado}"  itemValue="codigo" itemLabel="descripcion"/>
+					</form:select>
+                    <form:errors path="tipoInmueble" cssstyle="color:red"></form:errors>
+                </div>
+            </div> 
+            
+            <div class="control-group">
+                <label>Tipo  Inmueble:</label>
+                 <div class="controls">
+					<form:select path="tipoInmueble" id="tipoInmueble">
+					<form:options items="${listTipoInmueble}"  itemValue="codigo" itemLabel="descripcion"/>
+					</form:select>
+                    <form:errors path="tipoInmueble" cssstyle="color:red"></form:errors>
+                </div>
+            </div> 
+            <div class="control-group">
+                <label>Area:</label>
+                <div class="controls">
+                    <form:input path="area"></form:input>
+                    <form:errors path="area" cssstyle="color:red"></form:errors>
+                </div>
+            </div>
+            <div class="control-group">
+                <label>Distrito</label>
+                <div class="controls">
+                    <form:select path="distrito" id="distrito">
+					<form:options items="${listDistrito}"  itemValue="codigo" itemLabel="descripcion"/>
+					</form:select>
+                    <form:errors path="distrito" cssstyle="color:red"></form:errors>
+                </div>
+            </div>  
+            <div class="control-group">
+                <label>Dirección</label>
+                <div class="controls">
+                    <form:input path="direccion"></form:input>
+                    <form:errors path="direccion" cssstyle="color:red"></form:errors>
+                </div>
+            </div> 
+            <div class="control-group">
+                <label>Nro. Habitaciones</label>
+                <div class="controls">
+                    <form:input path="nroHab"></form:input>
+                    <form:errors path="nroHab" cssstyle="color:red"></form:errors>
+                </div>
+            </div> 
+            <div class="control-group">
+                <label>Nro. Baños</label>
+                <div class="controls">
+                    <form:input path="nroBanos"></form:input>
+                    <form:errors path="nroBanos" cssstyle="color:red"></form:errors>
+                </div>
+            </div> 
+            <div class="control-group">
+                <label>Patio</label>
+                <div class="controls">
+                    <form:checkbox path="hPatio"  ></form:checkbox>
+                </div>
+            </div> 
+            <div class="control-group">
+                <label>Jardin</label>
+                <div class="controls">
+                    <form:checkbox path="hJardin"  ></form:checkbox>
+                </div>
+            </div> 
+            <div class="control-group">
+                <label>Observaciones</label>
+                <div class="controls">
+                    <form:input path="observaciones"></form:input>
+                    <form:errors path="observaciones" cssstyle="color:red"></form:errors>
+                </div>
+            </div> 
+            <div class="control-group">
+                <div class="controls">
+                    DATOS CONTACTO
+                </div>
+            </div>
+            
+            <div class="control-group">
+                <label>Tipo persona:</label>
+                <div class="controls">
+                    
+                    <form:select path="tipoPersona" id="tipoPersona">
+					<form:options items="${listTipoPersona}"  itemValue="codigo" itemLabel="descripcion"/>
+					</form:select>
+                    <form:errors path="tipoPersona" cssstyle="color:red"></form:errors>
+                </div>
+            </div> 
+            <div class="control-group">
                 <label>Nombre/Razon Social:</label>
                 <div class="controls">
-                    <form:input path="nombre"></form:input>
-                    <form:errors path="nombre" cssstyle="color:red"></form:errors>
+                    <form:input path="numRazSocial"></form:input>
+                    <form:errors path="numRazSocial" cssstyle="color:red"></form:errors>
                 </div>
             </div>
             <div class="control-group">
                 <label>DNI/RUC:</label>
                 <div class="controls">
-                    <form:input path="doc"></form:input>
-                    <form:errors path="doc" cssstyle="color:red"></form:errors>
+                    <form:input path="docId"></form:input>
+                    <form:errors path="docId" cssstyle="color:red"></form:errors>
                 </div>
             </div>
             <div class="control-group">
@@ -43,66 +132,55 @@
                     <form:input path="telefono"></form:input>
                     <form:errors path="telefono" cssstyle="color:red"></form:errors>
                 </div>
-            </div>
+            </div>    
             <div class="control-group">
-                <label>Tipo  Inmueble:</label>
+                <label>Celular:</label>
                 <div class="controls">
-                    <form:input path="tipoInmueble"></form:input>
-                    <form:errors path="tipoInmueble" cssstyle="color:red"></form:errors>
+                    <form:input path="celular"></form:input>
+                    <form:errors path="celular" cssstyle="color:red"></form:errors>
                 </div>
-            </div>
+            </div>     
             <div class="control-group">
-                <label>Descripción:</label>
+                <label>Estado:</label>
                 <div class="controls">
-                    <form:input path="descripcion"></form:input>
-                    <form:errors path="descripcion" cssstyle="color:red"></form:errors>
+                    <form:input path="estado" value="4"></form:input>
+                    <form:errors path="estado" cssstyle="color:red"></form:errors>
                 </div>
-            </div>
+            </div>      
             <div class="control-group">
-                <label>Dirección</label>
+                <label>Fecha:</label>
                 <div class="controls">
-                    <form:input path="direccion"></form:input>
-                    <form:errors path="direccion" cssstyle="color:red"></form:errors>
+                    <form:input path="fecha" ></form:input>
+                    <form:errors path="fecha" cssstyle="color:red"></form:errors>
+                </div>
+            </div>     
+            <div class="control-group">
+                <label>Lugar:</label>
+                <div class="controls">
+                    <form:input path="lugar" ></form:input>
+                    <form:errors path="lugar" cssstyle="color:red"></form:errors>
+                </div>
+            </div> 
+            <div class="control-group">
+                <label>Codigo:</label>
+                <div class="controls">
+                    <form:input path="codigoDetalle" ></form:input>
+                    <form:errors path="codigoDetalle" cssstyle="color:red"></form:errors>
                 </div>
             </div>    
             <div class="control-group">
-                <label>Fecha</label>
+                <label>Codigo usuario:</label>
                 <div class="controls">
-                    <form:input path="dia"></form:input>
-                    <form:errors path="dia" cssstyle="color:red"></form:errors>
+                    <form:input path="codigoUsuario" value="${credential.id}" ></form:input>
+                    <form:errors path="codigoUsuario" cssstyle="color:red"></form:errors>
                 </div>
-            </div>   
-            <div class="control-group">
-                <label>Hora</label>
-                <div class="controls">
-                    <form:input path="hora"></form:input>
-                    <form:errors path="hora" cssstyle="color:red"></form:errors>
-                </div>
-            </div>   
-            <div class="control-group">
-                <label>Usuario</label>
-                <div class="controls">
-                    <form:input path="corredor"></form:input>
-                    <form:errors path="corredor" cssstyle="color:red"></form:errors>
-                </div>
-            </div>   
-            <div class="control-group">
-                <label>Usuario</label>
-                <div class="controls">
-                    <form:input path="usuarioId" value="${credential.correo}"></form:input>
-                    <form:errors path="usuarioId"  cssstyle="color:red"></form:errors>
-                </div>
-            </div>  
-            <div class="control-group" >
-                <label>Activo</label>
-                <div class="controls">
-                    <form:input path="activo" value="0"></form:input>
-                </div>
-            </div>  
+            </div>         
         </div>
         <div class="actions" style="margin-left: 160px;">
+           
             <input name="" value="Editar" type="submit" class="btn btn-primary">
-            <a style="margin-left: 5px;" href="<c:url value='/pages/citas/index'/>">Cancelar</a>
+           <a style="margin-left: 5px; " class="btn btn-primary" href="<c:url value='/pages/citas/anular?id=${cita.codigoDetalle}&codigoUsuario=${credential.id}'/>">Anular</a>
+            <a style="margin-left: 5px;" class="btn btn-primary"  href="<c:url value='/pages/citas/disponibles'/>">Cancelar</a>
         </div>
     </form:form>
 </div>

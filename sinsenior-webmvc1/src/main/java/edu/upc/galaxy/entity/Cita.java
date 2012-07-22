@@ -1,18 +1,18 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package edu.upc.galaxy.entity;
 
 import java.io.Serializable;
-import java.util.Date;
-import java.util.List;
-import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- *
- * @author Alvaro
- */
-@XmlRootElement
-public class Inmueble  implements Serializable {
+
+public class Cita  implements Serializable {
 
     private Integer codigo;
+    private String docID;
+    private String fecha;   
+    private String tipoEstadoDesc;      
     private String tipoInmueble;
     private String area;
     private String distrito;
@@ -33,51 +33,64 @@ public class Inmueble  implements Serializable {
     private String tipoPersonaDesc;
     private Integer estado;
     private String credat;
+    private Integer codigoDetalle;
+    private Integer codigoEstado;
+    private String lugar;
+    private Integer codigoUsuario;
     
-    public String getCredat() {
+    public String getLugar() {
+		return lugar;
+	}
+	public Integer getCodigoUsuario() {
+		return codigoUsuario;
+	}
+	public void setCodigoUsuario(Integer codigoUsuario) {
+		this.codigoUsuario = codigoUsuario;
+	}
+	public void setLugar(String lugar) {
+		this.lugar = lugar;
+	}
+	public Integer getCodigoDetalle() {
+		return codigoDetalle;
+	}
+	public void setCodigoDetalle(Integer codigoDetalle) {
+		this.codigoDetalle = codigoDetalle;
+	}
+	public Integer getCodigoEstado() {
+		return codigoEstado;
+	}
+	public void setCodigoEstado(Integer codigoEstado) {
+		this.codigoEstado = codigoEstado;
+	}
+	public String getCredat() {
 		return credat;
 	}
 	public void setCredat(String Credat) {
 		this.credat = Credat;
 	}
-	public Integer getEstado() {
-		return estado;
-	}
-	public void setEstado(Integer estado) {
-		this.estado = estado;
-	}
-	public String getTipoPersonaDesc() {
-		return tipoPersonaDesc;
-	}
-	public void setTipoPersonaDesc(String tipoPersonaDesc) {
-		this.tipoPersonaDesc = tipoPersonaDesc;
-	}
-	public String getDistritoDesc() {
-		return distritoDesc;
-	}
-	public void setDistritoDesc(String distritoDesc) {
-		this.distritoDesc = distritoDesc;
-	}
-	public String getTipoInmuebleDesc() {
-		return tipoInmuebleDesc;
-	}
-	public void setTipoInmuebleDesc(String tipoInmuebleDesc) {
-		this.tipoInmuebleDesc = tipoInmuebleDesc;
-	}
-	private List<DropDownList> listtipoInmueble;
-    
-    public List<DropDownList> getListtipoInmueble() {
-		return listtipoInmueble;
-	}
-	public void setListtipoInmueble(List<DropDownList> listtipoInmueble) {
-		this.listtipoInmueble = listtipoInmueble;
-	}
-	
-    public Integer getCodigo() {
+	public Integer getCodigo() {
 		return codigo;
 	}
 	public void setCodigo(Integer codigo) {
 		this.codigo = codigo;
+	}
+	public String getDocID() {
+		return docID;
+	}
+	public void setDocID(String docID) {
+		this.docID = docID;
+	}
+	public String getFecha() {
+		return fecha;
+	}
+	public void setFecha(String fecha) {
+		this.fecha = fecha;
+	}
+	public String getTipoEstadoDesc() {
+		return tipoEstadoDesc;
+	}
+	public void setTipoEstadoDesc(String tipoEstadoDesc) {
+		this.tipoEstadoDesc = tipoEstadoDesc;
 	}
 	public String getTipoInmueble() {
 		return tipoInmueble;
@@ -139,7 +152,6 @@ public class Inmueble  implements Serializable {
 	public void setTipoPersona(String tipoPersona) {
 		this.tipoPersona = tipoPersona;
 	}
-	
 	public String getNumRazSocial() {
 		return numRazSocial;
 	}
@@ -170,8 +182,30 @@ public class Inmueble  implements Serializable {
 	public void setCelular(String celular) {
 		this.celular = celular;
 	}
-
-     
+	public String getTipoInmuebleDesc() {
+		return tipoInmuebleDesc;
+	}
+	public void setTipoInmuebleDesc(String tipoInmuebleDesc) {
+		this.tipoInmuebleDesc = tipoInmuebleDesc;
+	}
+	public String getDistritoDesc() {
+		return distritoDesc;
+	}
+	public void setDistritoDesc(String distritoDesc) {
+		this.distritoDesc = distritoDesc;
+	}
+	public String getTipoPersonaDesc() {
+		return tipoPersonaDesc;
+	}
+	public void setTipoPersonaDesc(String tipoPersonaDesc) {
+		this.tipoPersonaDesc = tipoPersonaDesc;
+	}
+	public Integer getEstado() {
+		return estado;
+	}
+	public void setEstado(Integer estado) {
+		this.estado = estado;
+	}
     
     
     
@@ -180,8 +214,7 @@ public class Inmueble  implements Serializable {
     
     
     
-
- 
+    
     
     
 }

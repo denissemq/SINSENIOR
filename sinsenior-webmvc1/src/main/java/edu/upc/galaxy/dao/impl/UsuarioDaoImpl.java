@@ -1,6 +1,8 @@
 package edu.upc.galaxy.dao.impl;
 
 import edu.upc.galaxy.dao.UsuarioDao;
+import edu.upc.galaxy.entity.Credential;
+import edu.upc.galaxy.entity.DropDownList;
 import edu.upc.galaxy.entity.Usuario;
 import java.util.List;
 import javax.sql.DataSource;
@@ -75,4 +77,43 @@ public class UsuarioDaoImpl extends SimpleJdbcDaoSupport implements UsuarioDao {
                 return null;
         }           
     }
+    @Override
+    public Credential buscarxCorreo(String correo) {
+        try {
+                return getSimpleJdbcTemplate().queryForObject(
+                                "select id,  correo, password from usuarios where correo=?",
+                                new BeanPropertyRowMapper<Credential>(Credential.class), correo);
+        } catch (EmptyResultDataAccessException e) {
+                return null;
+        }           
+    }
+    
+    @Override
+   	public List<DropDownList> buscarTipoInmueble() {
+           log.info("Asignando el tipoInmueble");
+   		 return getSimpleJdbcTemplate().query(
+                    "select codigo,descripcion from tipoInmueble",
+                    new BeanPropertyRowMapper<DropDownList>(DropDownList.class));
+   	}
+
+   	@Override
+   	public List<DropDownList> buscarDistrito() {
+   		 return getSimpleJdbcTemplate().query(
+                    "select codigo,descripcion from distrito",
+                    new BeanPropertyRowMapper<DropDownList>(DropDownList.class));
+   	}
+
+   	@Override
+   	public List<DropDownList> buscarTipoPersona() {
+   		 return getSimpleJdbcTemplate().query(
+                    "select codigo, descripcion from tipoPersona",
+                    new BeanPropertyRowMapper<DropDownList>(DropDownList.class));
+   	}
+
+   	@Override
+   	public List<DropDownList> buscarEstado() {
+   		 return getSimpleJdbcTemplate().query(
+                    "select codigo, descripcion from estado",
+                    new BeanPropertyRowMapper<DropDownList>(DropDownList.class));
+   	}
 }

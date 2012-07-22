@@ -16,9 +16,5 @@ public interface InmuebleDao {
     public Inmueble buscar(Integer id);
     public Inmueble buscar(String nombre);
     public List<Inmueble> buscarTodosActivos();
-    public List<DropDownList> buscarTipoInmueble();
-    public List<DropDownList> buscarDistrito();
-    public List<DropDownList> buscarTipoPersona();
-    public List<DropDownList> buscarEstado();
    public List<Inmueble> buscarFiltro(Integer codigoDistrito, Integer codigoInmueble,Integer deArea, Integer HastaArea,Integer deHab, Integer HastaHab);
 }
