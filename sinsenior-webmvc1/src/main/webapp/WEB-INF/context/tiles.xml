@@ -128,6 +128,9 @@
         <put-attribute name="body" value="/WEB-INF/views/citas/infoInmueble.jsp"/>
     </definition>
     
+    <definition name="citas/ValidarDocumento" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/citas/editPendiente.jsp"/>
+    </definition>
                    
         
         

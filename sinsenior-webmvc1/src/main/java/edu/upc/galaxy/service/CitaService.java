@@ -11,6 +11,8 @@ public interface CitaService {
     public void anularOperacion(Integer id, Integer codigoUsuario, Integer codigoEstado);    
     public List<Cita> buscarTodos();
     public Cita buscar(Integer id);   
+    public Cita ValidarDocumento(String tipoPersona, String docId, Integer id);   
+    
     public List<Cita> buscarTodosDisponibles();
     public List<Cita> buscarTodosPendientes(Integer id);
 }

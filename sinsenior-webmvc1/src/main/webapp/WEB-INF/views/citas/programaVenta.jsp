@@ -28,11 +28,13 @@
                     <form:errors path="numRazSocial" cssstyle="color:red"></form:errors>
                 </div>
             </div>
-            <div class="control-group">
-            <a style="margin-left: 5px; " class="btn btn-primary">Validar</a>
             
-            </div>
-                 
+            <div class="control-group">
+                <label></label>
+                <div class="controls">
+                    <a style="margin-left: 5px; " class="btn btn-primary">Validar</a>
+                </div>
+            </div> 
             <div class="control-group">
                 <label>Observaciones:</label>
                 <div class="controls">

@@ -106,14 +106,17 @@
                 </div>
             </div> 
             <div class="control-group">
-            <a style="margin-left: 5px; " class="btn btn-primary">Validar</a>
+                <label></label>
+                <div class="controls">
+                     <a style="margin-left: 5px; " class="btn btn-primary" href="<c:url value='/pages/citas/ValidarDocumento?tipoPersona=${cita.tipoPersona}&docId=${cita.docId}&id=${cita.codigo}'/>">Validar</a>
             
-            </div>
+                </div>
+            </div> 
                  
             <div class="control-group">
                 <label>Observaciones:</label>
                 <div class="controls">
-                    <form:input path="observacionesic"></form:input>
+                    <form:textarea  path="observacionesic" rows="5" style="width:450px" ></form:textarea>
                     <form:errors path="observacionesic" cssstyle="color:red"></form:errors>
                 </div>
             </div>        

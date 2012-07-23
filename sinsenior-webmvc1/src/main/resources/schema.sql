@@ -33,7 +33,7 @@ CREATE TABLE persona
         codigo identity,
         tipoPersona int,
         numRazSocial VARCHAR(500),
-        docId VARCHAR(10),
+        docId VARCHAR(20),
         telefono VARCHAR(45),
         celular VARCHAR(45),
         correo VARCHAR(100)
@@ -143,7 +143,7 @@ insert into inmuebles (tipoInmueble, area, distrito,direccion,nroHab,nroBanos,hP
                 2,3,32,'Jr. Arequipa 3866',3,4,true,false,'No hay observaciones');
         
 insert into persona (tipoPersona, numRazSocial, docId,telefono,celular,correo) values (
-                2,'ALEXIM PERU','1087222','5722280','998928431','dmc_24x2@hotmail.com');
+                2,'ALEXIM PERU','20268512544','5722280','998928431','dmc_24x2@hotmail.com');
 
 insert into detalleSolicitud (codigoInmueble, codigoPersona, codigoEstado,activo,credat) values (
                 1,1,1,true,'20/07/2012');

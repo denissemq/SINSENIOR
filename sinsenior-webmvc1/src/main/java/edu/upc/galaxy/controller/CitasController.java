@@ -160,7 +160,18 @@ public class CitasController {
         return mav;
     }
     
-  
+
+
+    @RequestMapping("/citas/ValidarDocumento")
+    public ModelAndView ValidarDocumento(@RequestParam("tipoPersona")String tipoPersona,@RequestParam("docId")String docId,@RequestParam("id")Integer id, SessionStatus status)
+    {
+    	ModelAndView mav= new ModelAndView("citas/ValidarDocumento");
+        Cita cita = citaservice.ValidarDocumento(tipoPersona,docId, id);
+
+        mav.getModelMap().put("cita", cita);
+        return mav;
+    }
+    
     
     
 }
