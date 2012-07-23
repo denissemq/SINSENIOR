@@ -33,8 +33,15 @@ public class Inmueble  implements Serializable {
     private String tipoPersonaDesc;
     private Integer estado;
     private String credat;
+    private String tipoEstadoDesc;
     
-    public String getCredat() {
+    public String getTipoEstadoDesc() {
+		return tipoEstadoDesc;
+	}
+	public void setTipoEstadoDesc(String tipoEstadoDesc) {
+		this.tipoEstadoDesc = tipoEstadoDesc;
+	}
+	public String getCredat() {
 		return credat;
 	}
 	public void setCredat(String Credat) {

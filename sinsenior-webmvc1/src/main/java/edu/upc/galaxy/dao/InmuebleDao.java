@@ -13,6 +13,8 @@ public interface InmuebleDao {
     public void actualizar(Inmueble inmueble);
     public void eliminar(Inmueble inmueble);
     public List<Inmueble> buscarTodos();
+    public List<Inmueble> buscarTodosEstadistico();
+    
     public Inmueble buscar(Integer id);
     public Inmueble buscar(String nombre);
     public List<Inmueble> buscarTodosActivos();

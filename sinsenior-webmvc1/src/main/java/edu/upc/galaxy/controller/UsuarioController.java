@@ -95,7 +95,7 @@ public class UsuarioController {
         if (usuarioService.autenticar(credential.getCorreo(), credential.getPassword())) {
         	Credential credential1= usuarioService.buscarxCorreo(credential.getCorreo());
             request.getSession().setAttribute("credential",credential1);
-            return "redirect:/pages/usuarios/index";
+            return "redirect:/pages/citas/pendientes";
         }
         return "redirect:/pages/usuarios/login";
     }

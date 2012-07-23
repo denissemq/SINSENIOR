@@ -33,9 +33,10 @@ public class CitasController {
     private static Logger log = LoggerFactory.getLogger(CitasController.class);
 
     @RequestMapping("/citas/pendientes")
-    public ModelAndView pendientes() {
+    public ModelAndView pendientes(HttpServletRequest request) {
         ModelAndView mav = new ModelAndView("citas/pendientes");
-        List<Cita> citas = citaservice.buscarTodosPendientes();
+        Credential crede = (Credential)request.getSession().getAttribute("credential");
+        List<Cita> citas = citaservice.buscarTodosPendientes(Integer.parseInt(crede.getId()));
         mav.addObject("cita", citas);
         return mav;
     }
@@ -72,18 +73,48 @@ public class CitasController {
         return mav;        
     }
     
+    @RequestMapping(value="/citas/Aceptar", method=RequestMethod.POST)
+    public String Aceptar(@ModelAttribute("cita") Cita cita, SessionStatus status) {
+        citaservice.Aceptar(cita);
+        status.setComplete();
+        return "redirect:/pages/citas/pendientes";
+    }
     @RequestMapping(value="/citas/edit", method=RequestMethod.POST)
     public String update(@ModelAttribute("cita") Cita cita, SessionStatus status) {
         citaservice.actualizar(cita);
         status.setComplete();
         return "redirect:/pages/citas/disponibles";
     }
+
+    @RequestMapping(value = "/citas/editPendiente", method = RequestMethod.GET)
+    public ModelAndView editPendiente(@RequestParam("id")Integer id,HttpServletRequest request) {    
+        ModelAndView mav = new ModelAndView("citas/editPendiente");
+ 
+        Cita cita = citaservice.buscar(id);
+        mav.getModelMap().put("cita", cita);
+        
+        return mav;        
+    }
     
+    @RequestMapping(value="/citas/editPendiente", method=RequestMethod.POST)
+    public String updatePendiente(@ModelAttribute("cita") Cita cita, SessionStatus status) {
+        citaservice.actualizar(cita);
+        status.setComplete();
+        return "redirect:/pages/citas/pendientes";
+    }
     @RequestMapping("/citas/anular")
     public ModelAndView anular(@RequestParam("id")Integer id,@RequestParam("codigoUsuario")Integer codigoUsuario, SessionStatus status)
     {
-        ModelAndView mav = new ModelAndView("redirect:/pages/citas/disponibles");
+        ModelAndView mav = new ModelAndView("redirect:/pages/citas/pendientes");
         citaservice.anular(id,codigoUsuario);
+        status.setComplete();
+        return mav;
+    }
+    @RequestMapping("/citas/anularOperacion")
+    public ModelAndView anularOperacion(@RequestParam("id")Integer id,@RequestParam("codigoUsuario")Integer codigoUsuario,@RequestParam("codigoEstado")Integer codigoEstado, SessionStatus status)
+    {
+        ModelAndView mav = new ModelAndView("redirect:/pages/citas/pendientes");
+        citaservice.anularOperacion(id,codigoUsuario,codigoEstado);
         status.setComplete();
         return mav;
     }
@@ -102,6 +133,34 @@ public class CitasController {
         request.getSession().invalidate();
         return "redirect:/pages/citas/login";
     }        
+
+
+    @RequestMapping("/citas/validarOperacion")
+    public ModelAndView validarOperacion(@RequestParam("id")Integer id,@RequestParam("codigoUsuario")Integer codigoUsuario,@RequestParam("codigoEstado")Integer codigoEstado, SessionStatus status)
+    {
+    	ModelAndView mav ;
+		if (codigoEstado==4){
+			mav= new ModelAndView("citas/programaVenta");
+		}else{
+			mav= new ModelAndView("citas/programaCompra");
+		}
+        Cita cita = citaservice.buscar(id);
+        mav.getModelMap().put("cita", cita);
+        return mav;
+    }
+    
+
+
+    @RequestMapping("/citas/aceptarOperacion")
+    public ModelAndView aceptarOperacion(@RequestParam("id")Integer id,@RequestParam("codigoUsuario")Integer codigoUsuario,@RequestParam("codigoEstado")Integer codigoEstado, SessionStatus status)
+    {
+    	ModelAndView mav= new ModelAndView("citas/aceptarOperacion");
+        Cita cita = citaservice.buscar(id);
+        mav.getModelMap().put("cita", cita);
+        return mav;
+    }
+    
+  
     
     
 }

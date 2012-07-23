@@ -9,6 +9,8 @@ public interface InmuebleService {
     public void actualizar(Inmueble Inmueble);
     public void eliminar(Inmueble Inmueble);
     public List<Inmueble> buscarTodos();
+    public List<Inmueble> buscarTodosEstadistico();
+    
     public List<Inmueble> buscarTodosActivos();    
     public Inmueble buscar(Integer id);  
 	public List<Inmueble> buscarFiltro(Integer codigoDistrito, Integer codigoInmueble,

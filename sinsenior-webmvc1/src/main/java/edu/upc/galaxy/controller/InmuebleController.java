@@ -40,7 +40,7 @@ public class InmuebleController {
     @RequestMapping("/inmuebles/index")
     public ModelAndView index() {
         ModelAndView mav = new ModelAndView("inmuebles/index");
-        List<Inmueble> inmuebles = inmuebleService.buscarTodos();
+        List<Inmueble> inmuebles = inmuebleService.buscarTodosEstadistico();
         mav.addObject("inmuebles", inmuebles);
         return mav;
     }

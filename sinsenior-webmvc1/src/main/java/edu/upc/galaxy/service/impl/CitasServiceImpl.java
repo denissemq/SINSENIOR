@@ -34,13 +34,23 @@ public class CitasServiceImpl implements CitaService {
         log.info("Actualizando Cita");
         CitaDao.actualizar(Cita);
     }
-
+    @Override
+    public void Aceptar(Cita Cita) {
+        log.info("Actualizando Cita");
+        CitaDao.Aceptar(Cita);
+    }
+    
     @Override
     public void anular(Integer id, Integer codigoUsuario) {
         log.info("Anulando Cita");
         CitaDao.anular(id, codigoUsuario);
     }
 
+    @Override
+    public void anularOperacion(Integer id, Integer codigoUsuario, Integer codigoEstado) {
+        log.info("Anulando Cita");
+        CitaDao.anularOperacion(id, codigoUsuario,codigoEstado);
+    }
     @Override
     public List<Cita> buscarTodos() {
         log.info("Buscando todas las Citas");
@@ -53,9 +63,9 @@ public class CitasServiceImpl implements CitaService {
         return CitaDao.buscarTodosDisponibles();
     }
     @Override
-    public List<Cita> buscarTodosPendientes() {
+    public List<Cita> buscarTodosPendientes(Integer id) {
         log.info("Buscando todas las Citas");
-        return CitaDao.buscarTodosPendientes();
+        return CitaDao.buscarTodosPendientes(id);
     }
     @Override
     public Cita buscar(Integer id) {

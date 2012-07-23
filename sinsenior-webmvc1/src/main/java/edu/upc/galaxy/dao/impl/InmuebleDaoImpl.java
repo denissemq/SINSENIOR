@@ -101,7 +101,21 @@ public class InmuebleDaoImpl extends SimpleJdbcDaoSupport implements InmuebleDao
                         "left join distrito d on i.distrito=d.codigo " +
                         "left join detalleSolicitud ds on ds.codigoInmueble=i.codigo " +
                         "left join persona p on p.codigo=ds.codigoPersona " +
-                        "where ds.activo=1 and codigoEstado=2 " ,
+                        "where ds.activo=1 and codigoEstado=6 " ,
+                        new BeanPropertyRowMapper<Inmueble>(Inmueble.class));
+    }
+    @Override
+    public List<Inmueble> buscarTodosEstadistico() {
+        return getSimpleJdbcTemplate().query(
+                        "select codigo ,t.descripcion tipoInmuebleDesc,d.descripcion distritoDesc ,i.direccion," +
+                        "p.numRazSocial, i.distrito, i.area, i.tipoInmueble ,e.descripcion tipoEstadoDesc " +
+                        "from inmuebles i " +
+                        "left join tipoInmueble t on i.tipoInmueble=t.codigo " +
+                        "left join distrito d on i.distrito=d.codigo " +
+                        "left join detalleSolicitud ds on ds.codigoInmueble=i.codigo " +
+                        "left join persona p on p.codigo=ds.codigoPersona " +
+                        "left join estado e on e.codigo=ds.codigoEstado " +
+                        "where ds.activo=1 " ,
                         new BeanPropertyRowMapper<Inmueble>(Inmueble.class));
     }
     @Override

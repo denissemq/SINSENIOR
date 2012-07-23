@@ -88,7 +88,7 @@ insert into estado(codigo,descripcion)  values(3,'PROGRAMADO COMPRA');
 insert into estado(codigo,descripcion)  values(4,'PROGRAMADO VENTA');
 insert into estado(codigo,descripcion)  values(5,'ANULADO');
 insert into estado(codigo,descripcion)  values(6,'DISPONIBLE');
-insert into estado(codigo,descripcion)  values(7,'SEPARADO');
+insert into estado(codigo,descripcion)  values(7,'COMPRADO');
 
 
 insert into distrito(codigo,descripcion)  values(1,'ATE');
@@ -139,6 +139,14 @@ insert into detalleSolicitud (codigoInmueble, codigoPersona, codigoEstado,activo
                 0,0,2,true,'20/07/2012');
 
 
+insert into inmuebles (tipoInmueble, area, distrito,direccion,nroHab,nroBanos,hPatio,hJardin,observaciones) values (
+                2,3,32,'Jr. Arequipa 3866',3,4,true,false,'No hay observaciones');
+        
+insert into persona (tipoPersona, numRazSocial, docId,telefono,celular,correo) values (
+                2,'ALEXIM PERU','1087222','5722280','998928431','dmc_24x2@hotmail.com');
+
+insert into detalleSolicitud (codigoInmueble, codigoPersona, codigoEstado,activo,credat) values (
+                1,1,1,true,'20/07/2012');
 
 
 

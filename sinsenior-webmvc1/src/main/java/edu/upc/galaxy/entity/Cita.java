@@ -37,8 +37,14 @@ public class Cita  implements Serializable {
     private Integer codigoEstado;
     private String lugar;
     private Integer codigoUsuario;
-    
-    public String getLugar() {
+    private String observacionesic;
+    public String getObservacionesic() {
+		return observacionesic;
+	}
+	public void setObservacionesic(String observacionesic) {
+		this.observacionesic = observacionesic;
+	}
+	public String getLugar() {
 		return lugar;
 	}
 	public Integer getCodigoUsuario() {

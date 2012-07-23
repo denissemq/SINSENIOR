@@ -29,8 +29,7 @@
             <th>Tipo</th>
             <th>Fecha</th> 
             <th>Lugar</th> 
-         <th style="width: 150px;"></th>
-            <th style="width: 150px;"></th>
+         <th style="width: 100px;"></th>
         </tr>
         <c:forEach var="cita" items="${cita}">
             <tr>
@@ -41,8 +40,7 @@
                 <td>${cita.tipoEstadoDesc}</td>
                 <td>${cita.fecha}</td>
                 <td>${cita.lugar}</td>
-    <td><a href="<c:url value='/pages/citas/edit?id=${cita.codigo}'/>">Editar Cita</a></td>
-                <td><a href="<c:url value='/pages/inmuebles/delete?id=${cita.codigo}'/>" onclick="if (deletecitas()) { return true; } else { return false; }">Eliminar citas</a></td>
+    <td><a href="<c:url value='/pages/citas/editPendiente?id=${cita.codigo}'/>">Atender</a></td>
             </tr>
         </c:forEach>
     </table>

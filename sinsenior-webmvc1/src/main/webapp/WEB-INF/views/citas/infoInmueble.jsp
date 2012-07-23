@@ -5,8 +5,8 @@
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 
 <div class="container">
-    <h1>Editar Citas</h1><br/><br/>
-    <form:form action="edit" method="post" commandName="cita" cssClass="form-horizontal">
+    <h1>Paso 3-Aceptación</h1><br/><br/>
+    <form:form action="Aceptar" method="post" commandName="cita" cssClass="form-horizontal">
          <div class="row">
             <div class="control-group">
                 <div class="controls">
@@ -180,7 +180,7 @@
            
             <input name="" value="Grabar" type="submit" class="btn btn-primary">
            <a style="margin-left: 5px; " class="btn btn-primary" href="<c:url value='/pages/citas/anular?id=${cita.codigoDetalle}&codigoUsuario=${credential.id}'/>">Anular</a>
-            <a style="margin-left: 5px;" class="btn btn-primary"  href="<c:url value='/pages/citas/disponibles'/>">Cancelar</a>
+            <a style="margin-left: 5px;" class="btn btn-primary"  href="<c:url value='/pages/citas/pendientes'/>">Cancelar</a>
         </div>
     </form:form>
 </div>

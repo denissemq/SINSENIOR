@@ -48,7 +48,12 @@ public class InmuebleServiceImpl implements InmuebleService {
         log.info("Buscando todas las inmuebles");
         return inmuebleDao.buscarTodos();
     }
-
+    @Override
+    public List<Inmueble> buscarTodosEstadistico() {
+        log.info("Buscando todas las inmuebles");
+        return inmuebleDao.buscarTodosEstadistico();
+    }
+    
     public List<Inmueble> buscarTodosActivos() {
         log.info("Buscando todas las inmuebles Activos");
         return inmuebleDao.buscarTodosActivos();
