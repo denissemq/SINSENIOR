@@ -119,6 +119,7 @@ public class CitasServiceImpl implements CitaService {
 			while ((entrada = br.readLine()) != null){
 				cadena = cadena + entrada;
 			    		}
+			if (cadena.indexOf("Resultado")!=-1){
 			cadena = cadena.substring(cadena.indexOf("Resultado"));
 
 			cadena = cadena.replaceAll("<small>", "¬");
@@ -167,7 +168,10 @@ public class CitasServiceImpl implements CitaService {
 				
 			}
 	        log.info("cadena:   " + cadena);
-			
+			}else{
+				cadena="El numero Ruc ingresado es invalido.";
+		        log.info("cadena:   " + cadena);
+			}
 			cita.setObservacionesic(cadena);
 						} catch (IOException e) {
 						// TODO Auto-generated catch block
