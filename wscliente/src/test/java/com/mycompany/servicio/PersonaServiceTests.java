@@ -28,7 +28,7 @@ public class PersonaServiceTests {
 	public void deberiaValidarPorDni(){
 		Persona persona = service.consultarPersona("87551203");
 		assertNotNull(persona);
-		assertEquals("87551203", persona.getDni());
+		assertEquals("Pedro", persona.getNombre());
 		
 	}
 	

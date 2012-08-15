@@ -42,7 +42,7 @@ public class PersonaServiceImpl implements PersonaService {
         persona1.setApellidoMaterno("Pizarro");
         persona1.setDireccion("Alameda los misioneros 664");
         persona1.setTelefono("5752045");
-        persona1.setTipoPersona("N");
+        persona1.setTipoPersona("Inactivo");
 		
         Persona persona2 = new Persona();
         persona2.setDni("15715458");
@@ -51,7 +51,7 @@ public class PersonaServiceImpl implements PersonaService {
         persona2.setApellidoMaterno("Villacorta");
         persona2.setDireccion("Psje. Octavio Bernal 120 dpto F");
         persona2.setTelefono("4602787");
-        persona2.setTipoPersona("N");        
+        persona2.setTipoPersona("Inactivo");        
         
         Persona persona3 = new Persona();
         persona3.setDni("87551203");
@@ -60,8 +60,17 @@ public class PersonaServiceImpl implements PersonaService {
         persona3.setApellidoMaterno("Diez");
         persona3.setDireccion("Av. La Molina 432");
         persona3.setTelefono("4339812");
-        persona3.setTipoPersona("N");
+        persona3.setTipoPersona("Activo");
         
+
+        Persona persona4 = new Persona();
+        persona4.setDni("44547116");
+        persona4.setNombre("Denisse");
+        persona4.setApellidoPaterno("Marquez");
+        persona4.setApellidoMaterno("Campos");
+        persona4.setDireccion("Jr. arequipa 3866 SMP");
+        persona4.setTelefono("5722280");
+        persona4.setTipoPersona("Activo");
         
         personasPrueba.add(persona1);
         personasPrueba.add(persona2);
