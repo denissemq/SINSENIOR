@@ -1,0 +1,5 @@
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\INFOCORP\INFOCORP\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\INFOCORP\INFOCORP\bin\INFOCORP.dll
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\INFOCORP\INFOCORP\bin\INFOCORP.pdb
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\INFOCORP\INFOCORP\obj\Debug\INFOCORP.dll
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\INFOCORP\INFOCORP\obj\Debug\INFOCORP.pdb
