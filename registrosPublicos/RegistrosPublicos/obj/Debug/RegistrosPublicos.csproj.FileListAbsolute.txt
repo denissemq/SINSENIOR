@@ -1,0 +1,5 @@
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RegistrosPublicos\bin\RegistrosPublicos.dll
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RegistrosPublicos\bin\RegistrosPublicos.pdb
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RegistrosPublicos\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RegistrosPublicos\obj\Debug\RegistrosPublicos.dll
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RegistrosPublicos\obj\Debug\RegistrosPublicos.pdb

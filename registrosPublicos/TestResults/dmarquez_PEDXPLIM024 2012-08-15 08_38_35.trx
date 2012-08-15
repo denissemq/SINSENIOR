@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2d537d47-6fad-4354-bd6c-959877a8a9a1" name="dmarquez@PEDXPLIM024 2012-08-15 08:38:35" runUser="ATC\dmarquez" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="fa7bb22e-17ee-4b73-ace1-f9c325cbd9d8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="dmarquez_PEDXPLIM024 2012-08-15 08_38_35" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-08-15T08:38:35.6231250-05:00" queuing="2012-08-15T08:38:35.6387500-05:00" start="2012-08-15T08:38:35.6543750-05:00" finish="2012-08-15T08:38:35.9356250-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ValidarpersonaJ" storage="c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\projects\registrospublicos\resttest\bin\debug\resttest.dll" id="fe0a106e-72a0-bac8-d1e3-d4c7186742e7">
+      <Execution id="70d6f5c2-a534-4222-8543-e79e7838d7e2" />
+      <TestMethod codeBase="c:/documents and settings/dmarquez.atc/mis documentos/visual studio 2010/Projects/RegistrosPublicos/RestTest/bin/Debug/RestTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RestTest.RegPublicosTest, RestTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidarpersonaJ" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="fe0a106e-72a0-bac8-d1e3-d4c7186742e7" executionId="70d6f5c2-a534-4222-8543-e79e7838d7e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="70d6f5c2-a534-4222-8543-e79e7838d7e2" testId="fe0a106e-72a0-bac8-d1e3-d4c7186742e7" testName="ValidarpersonaJ" computerName="PEDXPLIM024" duration="00:00:00.0513203" startTime="2012-08-15T08:38:35.6543750-05:00" endTime="2012-08-15T08:38:35.9200000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="70d6f5c2-a534-4222-8543-e79e7838d7e2">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;";JR. AREQUIPA 3866 SAN MARTIN DE PORRES CASA 2 HABITACIONES, 2 BAÑOS, 4 PISOS"&gt;. Actual:&lt;";;JR. AREQUIPA 3866 SAN MARTIN DE PORRES CASA 2 HABITACIONES, 2 BAÑOS, 4 PISOS"&gt;. </Message>
+          <StackTrace>   at RestTest.RegPublicosTest.ValidarpersonaJ() in c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RestTest\UnitTest1.cs:line 40
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

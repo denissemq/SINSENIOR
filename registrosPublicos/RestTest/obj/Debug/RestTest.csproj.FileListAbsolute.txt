@@ -1,0 +1,5 @@
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RestTest\bin\Debug\RestTest.dll
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RestTest\bin\Debug\RestTest.pdb
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RestTest\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RestTest\obj\Debug\RestTest.dll
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RestTest\obj\Debug\RestTest.pdb
