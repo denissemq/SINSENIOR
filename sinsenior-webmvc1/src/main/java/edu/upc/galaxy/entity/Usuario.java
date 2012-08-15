@@ -3,11 +3,7 @@ package edu.upc.galaxy.entity;
 import java.io.Serializable;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- *
- * @author Alvaro
- */
-@XmlRootElement
+
 public class Usuario implements Serializable {
     
     private Integer id;

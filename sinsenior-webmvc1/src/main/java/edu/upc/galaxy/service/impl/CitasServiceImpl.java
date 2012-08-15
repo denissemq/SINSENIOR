@@ -1,43 +1,35 @@
 package edu.upc.galaxy.service.impl;
 
-import edu.upc.galaxy.dao.CitaDao;
+import edu.upc.galaxy.dao.DropDownListDao;
 import edu.upc.galaxy.dao.impl.CitaDaoImpl;
+import edu.upc.galaxy.dao.impl.DropDownListDaoImpl;
 import edu.upc.galaxy.entity.Cita;
+import edu.upc.galaxy.entity.DropDownList;
 import edu.upc.galaxy.service.CitaService;
+import edu.upc.galaxy.service.DropDownListService;
 
-import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.StringReader;
-import java.net.MalformedURLException;
-import java.net.URL;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
+import com.mycompany.servicio.PersonaService;
+import com.mycompany.servicio.PersonaServiceImplService;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.InputSource;
-/**
- *
- * @author gian
- *
- */
+
 @Service
 public class CitasServiceImpl implements CitaService {
 
     private static Logger log = LoggerFactory.getLogger(CitaDaoImpl.class);    
     
     @Autowired
-    private CitaDao CitaDao;
+    private edu.upc.galaxy.dao.CitaDao CitaDao;
 
     @Override
     public Integer insertar(Cita Cita) {
@@ -95,14 +87,30 @@ public class CitasServiceImpl implements CitaService {
         Cita cita = new Cita();
         cita = CitaDao.buscar(id);
         if (tipoPersona.equalsIgnoreCase("1")){
-        	cita= cita;
+        	cita= ValidarReniec(docId,cita);
         }else{
-        	cita= ValidarDatos(tipoPersona,docId,cita);
+        	cita= ValidarSUNAT(docId,cita);
         
         }
         return cita;
     }
-    public Cita ValidarDatos(String tipoPersona, String docId,Cita cita) {
+    
+    public Cita ValidarReniec(String docId,Cita cita){
+	
+    	 PersonaServiceImplService service = new PersonaServiceImplService();
+    	 PersonaService port = service.getPort(PersonaService.class);
+    	 com.mycompany.servicio.Persona per = port.consultarPersona(docId);  
+    	 if (per!=null){
+    	 String cadena = "";
+    	 cadena = "Nombre: " + per.getNombre()+ " " + per.getApellidoPaterno() + " " + per.getApellidoMaterno() + "\nEstado :" + per.getTipoPersona() + "\nDirección: " + per.getDireccion();
+    	 cita.setObservacionesic(cadena);
+    	 }else{
+    		 cita.setObservacionesic("El numero de DNI ingresado  es invalido.");
+    	 }
+    	return cita;
+    	
+    }
+    public Cita ValidarSUNAT(String docId,Cita cita) {
     	
 			    	
 			URL url;
@@ -145,12 +153,15 @@ public class CitasServiceImpl implements CitaService {
 				
 		        log.info("arreglo["+ contar.toString() + "]:   " + nodo);
 		        log.info("index" + nodo.indexOf("mero Ruc."));
+
+				//RUC
 				if (nodo.indexOf("mero Ruc.")>-1){
 			        log.info("ruc:   " + nodo);
 			        nodo =  nodo.substring(nodo.indexOf("mero Ruc."));
 			        nodo = nodo.replaceAll("mero Ruc.","RUC: ");
 					cadena = cadena + nodo;
 				}
+				//Estado
 		        log.info("index" + nodo.indexOf("Estado."));
 				if (nodo.indexOf("Estado.")>-1){
 			        log.info("Estado.:   " + nodo);
@@ -158,6 +169,7 @@ public class CitasServiceImpl implements CitaService {
 			        nodo = nodo.replaceAll("Estado.","\nEstado: ");
 					cadena = cadena + nodo;
 				}
+				//Direccion
 		        log.info("index" + nodo.indexOf("Direcci&#xF3;n."));
 				if (nodo.indexOf("Direcci&#xF3;n.")>-1){
 			        log.info("Direcci&#xF3;n.:   " + nodo);
@@ -169,7 +181,7 @@ public class CitasServiceImpl implements CitaService {
 			}
 	        log.info("cadena:   " + cadena);
 			}else{
-				cadena="El numero Ruc ingresado es invalido.";
+				cadena="El numero de RUC ingresado es invalido.";
 		        log.info("cadena:   " + cadena);
 			}
 			cita.setObservacionesic(cadena);

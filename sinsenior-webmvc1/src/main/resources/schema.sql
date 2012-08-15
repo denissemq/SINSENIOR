@@ -133,7 +133,7 @@ insert into inmuebles (tipoInmueble, area, distrito,direccion,nroHab,nroBanos,hP
                 1,2,36,'Jr. Arequipa 3866',3,4,true,false,'No hay observaciones');
         
 insert into persona (tipoPersona, numRazSocial, docId,telefono,celular,correo) values (
-                1,'Denisse Marquez','44547116','5722280','998928431','dmc_24x2@hotmail.com');
+                1,'Denisse Marquez','87551203','5722280','998928431','dmc_24x2@hotmail.com');
 
 insert into detalleSolicitud (codigoInmueble, codigoPersona, codigoEstado,activo,credat) values (
                 0,0,2,true,'20/07/2012');

@@ -11,28 +11,28 @@
             <div class="control-group">
                 <label>Nombre/Razon Social:</label>
                 <div class="controls">
-                    <form:input path="nombre"></form:input>
+                    <form:input path="nombre"  readOnly="true"></form:input>
                     <form:errors path="nombre" cssstyle="color:red"></form:errors>
                 </div>
             </div>
             <div class="control-group">
                 <label>DNI/RUC:</label>
                 <div class="controls">
-                    <form:input path="doc"></form:input>
+                    <form:input path="doc"  readOnly="true"></form:input>
                     <form:errors path="doc" cssstyle="color:red"></form:errors>
                 </div>
             </div>
             <div class="control-group">
                 <label>Correo electrónico:</label>
                 <div class="controls">
-                    <form:input path="correo"></form:input>
+                    <form:input path="correo"  readOnly="true"></form:input>
                     <form:errors path="correo" cssstyle="color:red"></form:errors>
                 </div>
             </div>
             <div class="control-group">
                 <label>Telefono:</label>
                 <div class="controls">
-                    <form:input path="telefono"></form:input>
+                    <form:input path="telefono"  readOnly="true"></form:input>
                     <form:errors path="telefono" cssstyle="color:red"></form:errors>
                 </div>
             </div>
@@ -46,14 +46,14 @@
             <div class="control-group">
                 <label>Descripción:</label>
                 <div class="controls">
-                    <form:input path="descripcion"></form:input>
+                    <form:input path="descripcion"  readOnly="true"></form:input>
                     <form:errors path="descripcion" cssstyle="color:red"></form:errors>
                 </div>
             </div>
             <div class="control-group">
                 <label>Dirección</label>
                 <div class="controls">
-                    <form:input path="direccion"></form:input>
+                    <form:input path="direccion"  readOnly="true"></form:input>
                     <form:errors path="direccion" cssstyle="color:red"></form:errors>
                 </div>
             </div>    

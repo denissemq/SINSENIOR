@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.List;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
+
 public class DropDownList implements Serializable  {
 
     private Integer codigo;
