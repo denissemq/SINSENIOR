@@ -30,8 +30,36 @@ public class Inmueble  implements Serializable {
     private Integer estado;
     private String credat;
     private String tipoEstadoDesc;
+    private String Dearea;
+    private String Hastaarea;
+    private String DeHab;
+    private String HastaHab;
     
-    public String getTipoEstadoDesc() {
+    public String getDearea() {
+		return Dearea;
+	}
+	public void setDearea(String dearea) {
+		Dearea = dearea;
+	}
+	public String getHastaarea() {
+		return Hastaarea;
+	}
+	public void setHastaarea(String hastaarea) {
+		Hastaarea = hastaarea;
+	}
+	public String getDeHab() {
+		return DeHab;
+	}
+	public void setDeHab(String deHab) {
+		DeHab = deHab;
+	}
+	public String getHastaHab() {
+		return HastaHab;
+	}
+	public void setHastaHab(String hastaHab) {
+		HastaHab = hastaHab;
+	}
+	public String getTipoEstadoDesc() {
 		return tipoEstadoDesc;
 	}
 	public void setTipoEstadoDesc(String tipoEstadoDesc) {

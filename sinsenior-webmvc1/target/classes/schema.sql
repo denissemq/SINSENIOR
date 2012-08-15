@@ -136,7 +136,7 @@ insert into persona (tipoPersona, numRazSocial, docId,telefono,celular,correo) v
                 1,'Denisse Marquez','87551203','5722280','998928431','dmc_24x2@hotmail.com');
 
 insert into detalleSolicitud (codigoInmueble, codigoPersona, codigoEstado,activo,credat) values (
-                0,0,2,true,'20/07/2012');
+                0,0,6,true,'20/07/2012');
 
 
 insert into inmuebles (tipoInmueble, area, distrito,direccion,nroHab,nroBanos,hPatio,hJardin,observaciones) values (

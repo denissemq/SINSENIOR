@@ -42,7 +42,8 @@
             <div class="control-group">
                 <label></label>
                 <div class="controls">
-                    <a style="margin-left: 5px; " class="btn btn-primary">Validar</a>
+                     <a style="margin-left: 5px; " class="btn btn-primary" href="<c:url value='/pages/citas/ValidarDocumento?tipoPersona=${cita.tipoPersona}&docId=${cita.docId}&id=${cita.codigo}'/>">Validar</a>
+            
                 </div>
             </div> 
                  

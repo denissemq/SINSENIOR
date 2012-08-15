@@ -91,6 +91,17 @@
             <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
         </definition>
 
+      
+              <definition name="inmuebles/separa" extends="defaultTemplate">
+		<put-attribute name="header" value="/WEB-INF/views/inmuebles/header_navegante.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/inmuebles/separa.jsp" />
+        </definition>        
+
+        <definition name="inmuebles/suscribe" extends="defaultTemplate">
+		<put-attribute name="header" value="/WEB-INF/views/inmuebles/header_navegante.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/inmuebles/suscribe.jsp" />
+        </definition>        
+        
     <definition name="citas/pendientes" extends="defaultTemplate">
 		<put-attribute name="body" value="/WEB-INF/views/citas/pendientes.jsp" />
 	</definition>

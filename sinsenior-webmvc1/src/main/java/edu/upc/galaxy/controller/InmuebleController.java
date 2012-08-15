@@ -3,6 +3,7 @@ package edu.upc.galaxy.controller;
 import edu.upc.galaxy.entity.Credential;
 import edu.upc.galaxy.entity.DropDownList;
 import edu.upc.galaxy.entity.Inmueble;
+import edu.upc.galaxy.entity.inmueblesLista;
 import edu.upc.galaxy.service.InmuebleService;
 import edu.upc.galaxy.service.DropDownListService;
 import edu.upc.galaxy.service.impl.DropDownListServiceImpl;
@@ -48,6 +49,7 @@ public class InmuebleController {
     public ModelAndView indexcomenta() {
         ModelAndView mav = new ModelAndView("inmuebles/indexcomenta");
         List<Inmueble> inmuebles = inmuebleService.buscarTodos();
+        Inmueble inmueble = new Inmueble();
         mav.addObject("inmuebles", inmuebles);
         return mav;
     }
@@ -55,11 +57,24 @@ public class InmuebleController {
     @RequestMapping("/inmuebles/compra")
     public ModelAndView compra() {
         ModelAndView mav = new ModelAndView("inmuebles/compra");
+        inmueblesLista listaInm = new inmueblesLista();
         List<Inmueble> inmuebles = inmuebleService.buscarTodos();
-        mav.addObject("inmuebles", inmuebles);
+        listaInm.setInmuebles(inmuebles);
+        mav.addObject("listaInmuemble", listaInm);
         return mav;
     }
 
+    @RequestMapping(value = "/inmuebles/buscar", method = RequestMethod.POST)
+    public ModelAndView buscar(@ModelAttribute("listaInmuemble")inmueblesLista listaBus, SessionStatus status) {    
+        
+        ModelAndView mav = new ModelAndView("inmuebles/compra");
+        inmueblesLista listaInm = inmuebleService.buscarFiltro(listaBus.getDistrito().toString(), listaBus.getTipoInmueble().toString(), listaBus.getDearea().toString(),  listaBus.getHastaarea().toString(), listaBus.getDeHab().toString(),  listaBus.getHastaHab().toString());
+
+        mav.addObject("listaInmuemble", listaInm);
+        return mav;
+    }
+    
+    
     @RequestMapping("/inmuebles/venta")
     public ModelAndView venta(HttpServletRequest request) {
     	 ModelAndView mav = new ModelAndView("inmuebles/venta");
@@ -85,6 +100,13 @@ public class InmuebleController {
         return "redirect:/pages/inmuebles/compra";
     }
     
+
+    @RequestMapping(value = "/inmuebles/solicita", method = RequestMethod.POST)
+    public String solicita(@ModelAttribute("inmueble")Inmueble inmueble, SessionStatus status) {    
+        inmuebleService.solicita(inmueble);
+        status.setComplete();
+        return "redirect:/pages/inmuebles/compra";
+    }
     
     
     @RequestMapping(value = "/inmuebles/editcomenta", method = RequestMethod.GET)
@@ -126,7 +148,28 @@ public class InmuebleController {
     public String logout(HttpServletRequest request) {
         request.getSession().invalidate();
         return "redirect:/pages/inmuebles/login";
-    }        
+    }  
+    
+    @RequestMapping(value = "/inmuebles/separa", method = RequestMethod.GET)
+    public ModelAndView separainmueble(@RequestParam("id")Integer id) {    
+        ModelAndView mav = new ModelAndView("inmuebles/separa");
+        Inmueble inmuebles = inmuebleService.buscar(id);
+        mav.addObject("inmuebles", inmuebles);
+        return mav;
+    } 
+
+    
+    @RequestMapping(value = "/inmuebles/suscribe", method = RequestMethod.GET)
+    public ModelAndView suscribeinmueble(@RequestParam("id")Integer id) {        
+        ModelAndView mav = new ModelAndView("inmuebles/suscribe");
+        Inmueble inmuebles = new Inmueble();
+        inmuebles.setCodigo(id);
+        mav.getModelMap().put("inmuebles", inmuebles);        
+        //Inmueble inmuebles = inmuebleService.buscar(id);
+        //mav.addObject("inmuebles", inmuebles);
+        return mav;        
+    }
+
     
     
 }

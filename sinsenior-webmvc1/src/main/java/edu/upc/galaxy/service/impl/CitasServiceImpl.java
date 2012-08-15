@@ -94,6 +94,20 @@ public class CitasServiceImpl implements CitaService {
         }
         return cita;
     }
+    @Override
+
+    public Cita ValidarRegpublicos(String tipoPersona, String docId, Integer id){
+        log.info("Buscar Regpublicos por id");
+        Cita cita = new Cita();
+        cita = CitaDao.buscar(id);
+        if (tipoPersona.equalsIgnoreCase("1")){
+        	cita= ValidarReniec(docId,cita);
+        }else{
+        	cita= ValidarSUNAT(docId,cita);
+        
+        }
+        return cita;
+    }
     
     public Cita ValidarReniec(String docId,Cita cita){
 	

@@ -149,7 +149,7 @@ public class CitasController {
         return mav;
     }
     
-
+    
 
     @RequestMapping("/citas/aceptarOperacion")
     public ModelAndView aceptarOperacion(@RequestParam("id")Integer id,@RequestParam("codigoUsuario")Integer codigoUsuario,@RequestParam("codigoEstado")Integer codigoEstado, SessionStatus status)
@@ -161,6 +161,15 @@ public class CitasController {
     }
     
 
+    @RequestMapping("/citas/ValidarRegpublicos")
+    public ModelAndView ValidarRegpublicos(@RequestParam("tipoPersona")String tipoPersona,@RequestParam("docId")String docId,@RequestParam("id")Integer id, SessionStatus status)
+    {
+    	ModelAndView mav= new ModelAndView("citas/ValidarRegpublicos");
+        Cita cita = citaservice.ValidarDocumento(tipoPersona,docId, id);
+
+        mav.getModelMap().put("cita", cita);
+        return mav;
+    }
 
     @RequestMapping("/citas/ValidarDocumento")
     public ModelAndView ValidarDocumento(@RequestParam("tipoPersona")String tipoPersona,@RequestParam("docId")String docId,@RequestParam("id")Integer id, SessionStatus status)
