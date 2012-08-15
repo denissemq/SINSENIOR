@@ -3,3 +3,8 @@ c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Project
 c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RegistrosPublicos\obj\Debug\ResolveAssemblyReference.cache
 c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RegistrosPublicos\obj\Debug\RegistrosPublicos.dll
 c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\RegistrosPublicos\RegistrosPublicos\obj\Debug\RegistrosPublicos.pdb
+C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RegistrosPublicos\bin\RegistrosPublicos.dll
+C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RegistrosPublicos\bin\RegistrosPublicos.pdb
+C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RegistrosPublicos\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RegistrosPublicos\obj\Debug\RegistrosPublicos.dll
+C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RegistrosPublicos\obj\Debug\RegistrosPublicos.pdb

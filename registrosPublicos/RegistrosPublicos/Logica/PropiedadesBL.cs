@@ -60,6 +60,19 @@ namespace RegistrosPublicos.Logica
             listaPropiedades.Add(prop3);
             persona1 = new Persona("1044547117", "JURIDICA", "STEAM WASH", listaPropiedades);
             listaPersonas.Add(persona1);
+
+
+
+
+            listaPropiedades = new List<Propiedades>();
+            prop1 = new Propiedades("CASA", "LOS OLIVOS", "AV UNIVERSITARIA 1550 ", "3 HABITACIONES, 1 BAÑOS, 3 PISOS");
+            prop2 = new Propiedades("CASA", "COMAS", "AV. SAN FELIPE 1313", "6 HABITACIONES, 1 BAÑOS, 3 PISOS");
+            prop3 = new Propiedades("CASA", "RIMAC", "AV. LA CAPILLA 530", "4 HABITACIONES, 1 BAÑOS, 3 PISOS");
+            listaPropiedades.Add(prop1);
+            listaPropiedades.Add(prop2);
+            listaPropiedades.Add(prop3);
+            persona1 = new Persona("44959495", "NATURAL", "JEAN PAUL CANALES", listaPropiedades);
+            listaPersonas.Add(persona1);
             
 
             return listaPersonas;
