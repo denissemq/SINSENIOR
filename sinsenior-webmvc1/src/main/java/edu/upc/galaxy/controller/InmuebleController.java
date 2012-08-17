@@ -78,6 +78,7 @@ public class InmuebleController {
         List<Inmueble> inmuebles = inmuebleService.buscarTodos();
         listaInm.setInmuebles(inmuebles);
         mav.addObject("listaInmuemble", listaInm);
+<<<<<<< HEAD
         return mav;
     }
     @RequestMapping("/inmuebles/suscripciones")
@@ -85,6 +86,8 @@ public class InmuebleController {
         ModelAndView mav = new ModelAndView("inmuebles/suscripciones");
         List<inmueblesLista> listaInm =  inmuebleService.buscarPreferencias();
         mav.addObject("listaInmuemble", listaInm);
+=======
+>>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
         return mav;
     }
     
@@ -94,6 +97,15 @@ public class InmuebleController {
         ModelAndView mav = new ModelAndView("inmuebles/compra");
         inmueblesLista listaInm = inmuebleService.buscarFiltro(listaBus.getDistrito().toString(), listaBus.getTipoInmueble().toString(), listaBus.getAreade().toString(),  listaBus.getAreahasta().toString(), listaBus.getNroHabde().toString(),  listaBus.getNroHabhasta().toString());
 
+<<<<<<< HEAD
+=======
+    @RequestMapping(value = "/inmuebles/buscar", method = RequestMethod.POST)
+    public ModelAndView buscar(@ModelAttribute("listaInmuemble")inmueblesLista listaBus, SessionStatus status) {    
+        
+        ModelAndView mav = new ModelAndView("inmuebles/compra");
+        inmueblesLista listaInm = inmuebleService.buscarFiltro(listaBus.getDistrito().toString(), listaBus.getTipoInmueble().toString(), listaBus.getDearea().toString(),  listaBus.getHastaarea().toString(), listaBus.getDeHab().toString(),  listaBus.getHastaHab().toString());
+
+>>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
         mav.addObject("listaInmuemble", listaInm);
         return mav;
     }

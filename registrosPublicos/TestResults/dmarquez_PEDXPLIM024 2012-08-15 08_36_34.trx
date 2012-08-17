@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1a4581f7-0a6b-4dcf-9239-07fdf8fe34d7" name="dmarquez@PEDXPLIM024 2012-08-15 08:36:34" runUser="ATC\dmarquez" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="fa7bb22e-17ee-4b73-ace1-f9c325cbd9d8">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="dmarquez_PEDXPLIM024 2012-08-15 08_36_34" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-08-15T08:36:34.3106250-05:00" queuing="2012-08-15T08:36:35.8262500-05:00" start="2012-08-15T08:36:35.9825000-05:00" finish="2012-08-15T08:36:50.7793750-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="PEDXPLIM024" outcome="Error" timestamp="2012-08-15T08:36:50.7637500-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Validarpersona" storage="c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\projects\registrospublicos\resttest\bin\debug\resttest.dll" id="8f675266-33c6-c0cf-6e2d-7421992d2a40">
+      <Execution id="b1348122-5cd0-4fbc-9aab-e32034f7ed68" />
+      <TestMethod codeBase="c:/documents and settings/dmarquez.atc/mis documentos/visual studio 2010/Projects/RegistrosPublicos/RestTest/bin/Debug/RestTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RestTest.RegPublicosTest, RestTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Validarpersona" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8f675266-33c6-c0cf-6e2d-7421992d2a40" executionId="b1348122-5cd0-4fbc-9aab-e32034f7ed68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b1348122-5cd0-4fbc-9aab-e32034f7ed68" testId="8f675266-33c6-c0cf-6e2d-7421992d2a40" testName="Validarpersona" computerName="PEDXPLIM024" duration="00:00:14.6406250" startTime="2012-08-15T08:36:36.1387500-05:00" endTime="2012-08-15T08:36:50.7793750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1348122-5cd0-4fbc-9aab-e32034f7ed68">
+    </UnitTestResult>
+  </Results>
+</TestRun>

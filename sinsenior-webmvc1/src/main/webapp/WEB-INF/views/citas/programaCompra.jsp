@@ -42,7 +42,11 @@
             <div class="control-group">
                 <label></label>
                 <div class="controls">
+<<<<<<< HEAD
                      <a style="margin-left: 5px; " class="btn btn-primary" href="<c:url value='/pages/citas/ValidarInfocorp?tipoPersona=${cita.tipoPersona}&docId=${cita.docId}&id=${cita.codigo}'/>">Validar</a>
+=======
+                     <a style="margin-left: 5px; " class="btn btn-primary" href="<c:url value='/pages/citas/ValidarDocumento?tipoPersona=${cita.tipoPersona}&docId=${cita.docId}&id=${cita.codigo}'/>">Validar</a>
+>>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
             
                 </div>
             </div> 

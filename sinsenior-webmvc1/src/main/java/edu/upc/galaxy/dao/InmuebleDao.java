@@ -22,7 +22,10 @@ public interface InmuebleDao {
     public List<Inmueble> buscarTodosActivos();
     public inmueblesLista buscarFiltro(String distrito, String tipoInmueble,String deArea, String hastaArea, String deHab, String hastaHab);
     public Integer solicita(Inmueble inmueble);
+<<<<<<< HEAD
 	public Integer suscribir(inmueblesLista inmueble);
 	public List<inmueblesLista> buscarPreferencias();
 	public void AnulSuscrip(Integer id);
+=======
+>>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
 }

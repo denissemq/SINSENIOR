@@ -43,6 +43,7 @@ public class ObjectFactory {
     }
 
     /**
+<<<<<<< HEAD
      * Create an instance of {@link Persona }
      * 
      */
@@ -56,6 +57,21 @@ public class ObjectFactory {
      */
     public ConsultarPersonaResponse createConsultarPersonaResponse() {
         return new ConsultarPersonaResponse();
+=======
+     * Create an instance of {@link ConsultarPersonaResponse }
+     * 
+     */
+    public ConsultarPersonaResponse createConsultarPersonaResponse() {
+        return new ConsultarPersonaResponse();
+    }
+
+    /**
+     * Create an instance of {@link Persona }
+     * 
+     */
+    public Persona createPersona() {
+        return new Persona();
+>>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
     }
 
     /**

@@ -4,6 +4,7 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<<<<<<< HEAD
 <script type="text/javascript" >
 var ErrorInProgress = false;
 var ObjectError = false;
@@ -184,6 +185,9 @@ function elementEmailOnBlur(){
 	return true;
 }
 </script>
+=======
+
+>>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
 <div class="container">
     <h1 style="float:left;">Buscar inmuebles</h1>
     <form:form action="buscar" method="POST" commandName="listaInmuemble" cssClass="form-horizontal" >
@@ -214,19 +218,33 @@ function elementEmailOnBlur(){
             <div class="control-group">
                 <label>Area:</label>
                  <div class="controls">
+<<<<<<< HEAD
 					Desde:  <form:input path="areade" style="width:50px"  onkeypress="return PriceMask(this)"  onBlur ="fn_formatDecimal(2);"></form:input> 
 					Hasta:  <form:input path="areahasta" style="width:50px"  onkeypress="return PriceMask(this)"  onBlur ="fn_formatDecimal(2);"></form:input> 
+=======
+					Desde:  <form:input path="Dearea" style="width:50px"></form:input> 
+					Hasta:  <form:input path="Hastaarea" style="width:50px"></form:input> 
+>>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
                 </div>
             </div>
             <div class="control-group">
                 <label>Nro Habitaciones:</label>
                  <div class="controls">
+<<<<<<< HEAD
 					Desde:  <form:input path="nroHabde" style="width:50px"  onkeypress="return PriceMask(this)"  onBlur ="fn_formatDecimal(0);"></form:input> 
 					Hasta:  <form:input path="nroHabhasta" style="width:50px"  onkeypress="return PriceMask(this)"  onBlur ="fn_formatDecimal(0);"></form:input> 
                 </div>
             </div> 
                 <input name="" value="Buscar" type="submit" class="btn btn-primary">
                <table class="table table-striped" >
+=======
+					Desde:  <form:input path="DeHab" style="width:50px"></form:input> 
+					Hasta:  <form:input path="HastaHab" style="width:50px"></form:input> 
+                </div>
+            </div> 
+                <input name="" value="Buscar" type="submit" class="btn btn-primary">
+    <table class="table table-striped" >
+>>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
         <tr>
         	<th>Tipo Inmueble</th>
             <th>Distrito</th>

@@ -1,0 +1,5 @@
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\INFOCORP\tEST\bin\Debug\tEST.dll
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\INFOCORP\tEST\bin\Debug\tEST.pdb
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\INFOCORP\tEST\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\INFOCORP\tEST\obj\Debug\tEST.dll
+c:\documents and settings\dmarquez.atc\mis documentos\visual studio 2010\Projects\INFOCORP\tEST\obj\Debug\tEST.pdb
