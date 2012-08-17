@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Sinsenior/src/main/webapp/WEB-INF/Context&apos; to &apos;context&apos;" description="Rename resource &apos;Context&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/WEB-INF/Context" name="context" stamp="1344213976490" updateReferences="true"/>
+</session>

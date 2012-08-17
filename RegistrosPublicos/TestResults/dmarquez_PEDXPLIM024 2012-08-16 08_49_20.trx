@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="10b96873-93b0-47ab-889d-f204347ffaa7" name="dmarquez@PEDXPLIM024 2012-08-16 08:49:20" runUser="ATC\dmarquez" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="b7a4a86e-41cd-410a-9b4b-6472812e5444">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="dmarquez_PEDXPLIM024 2012-08-16 08_49_20" />
+  </TestSettings>
+  <Times creation="2012-08-16T08:49:20.4668750-05:00" queuing="2012-08-16T08:49:30.6856250-05:00" start="2012-08-16T08:49:31.0762500-05:00" finish="2012-08-16T08:49:38.0450000-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ValidarpersonaN" storage="c:\documents and settings\dmarquez.atc\sinsenior\registrospublicos\resttest\bin\debug\resttest.dll" id="0e0b68cd-c71c-60c2-a9cf-ebbd9968489f">
+      <Execution id="3d3690ec-3cfa-4f5f-875c-2b42334e6cbf" />
+      <TestMethod codeBase="C:/Documents and Settings/dmarquez.ATC/SINSENIOR/RegistrosPublicos/RestTest/bin/Debug/RestTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RestTest.RegPublicosTest, RestTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidarpersonaN" />
+    </UnitTest>
+    <UnitTest name="ValidarpersonaJ" storage="c:\documents and settings\dmarquez.atc\sinsenior\registrospublicos\resttest\bin\debug\resttest.dll" id="fe0a106e-72a0-bac8-d1e3-d4c7186742e7">
+      <Execution id="4e879901-39ea-43ed-b28d-ded33a7493b8" />
+      <TestMethod codeBase="C:/Documents and Settings/dmarquez.ATC/SINSENIOR/RegistrosPublicos/RestTest/bin/Debug/RestTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RestTest.RegPublicosTest, RestTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidarpersonaJ" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0e0b68cd-c71c-60c2-a9cf-ebbd9968489f" executionId="3d3690ec-3cfa-4f5f-875c-2b42334e6cbf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe0a106e-72a0-bac8-d1e3-d4c7186742e7" executionId="4e879901-39ea-43ed-b28d-ded33a7493b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3d3690ec-3cfa-4f5f-875c-2b42334e6cbf" testId="0e0b68cd-c71c-60c2-a9cf-ebbd9968489f" testName="ValidarpersonaN" computerName="PEDXPLIM024" duration="00:00:00.7430167" startTime="2012-08-16T08:49:31.2481250-05:00" endTime="2012-08-16T08:49:37.2325000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d3690ec-3cfa-4f5f-875c-2b42334e6cbf">
+    </UnitTestResult>
+    <UnitTestResult executionId="4e879901-39ea-43ed-b28d-ded33a7493b8" testId="fe0a106e-72a0-bac8-d1e3-d4c7186742e7" testName="ValidarpersonaJ" computerName="PEDXPLIM024" duration="00:00:00.0032399" startTime="2012-08-16T08:49:37.2637500-05:00" endTime="2012-08-16T08:49:37.2793750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e879901-39ea-43ed-b28d-ded33a7493b8">
+    </UnitTestResult>
+  </Results>
+</TestRun>
