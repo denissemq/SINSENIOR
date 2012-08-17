@@ -2,6 +2,8 @@ package edu.upc.galaxy.dao;
 
 import edu.upc.galaxy.entity.Inmueble;
 import edu.upc.galaxy.entity.DropDownList;
+import edu.upc.galaxy.entity.inmueblesLista;
+
 import java.util.List;
 
 /**
@@ -18,5 +20,9 @@ public interface InmuebleDao {
     public Inmueble buscar(Integer id);
     public Inmueble buscar(String nombre);
     public List<Inmueble> buscarTodosActivos();
-   public List<Inmueble> buscarFiltro(Integer codigoDistrito, Integer codigoInmueble,Integer deArea, Integer HastaArea,Integer deHab, Integer HastaHab);
+    public inmueblesLista buscarFiltro(String distrito, String tipoInmueble,String deArea, String hastaArea, String deHab, String hastaHab);
+    public Integer solicita(Inmueble inmueble);
+	public Integer suscribir(inmueblesLista inmueble);
+	public List<inmueblesLista> buscarPreferencias();
+	public void AnulSuscrip(Integer id);
 }

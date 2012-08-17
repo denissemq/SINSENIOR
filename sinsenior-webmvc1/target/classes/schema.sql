@@ -77,6 +77,24 @@ CREATE TABLE detalleSolicitud
         credat  varchar(1000)
 );
 
+drop table preferencias if exists;
+CREATE TABLE preferencias
+(
+        codigo identity,
+        tipoInmueble INT,
+        areade DECIMAL(16,2),
+        areahasta DECIMAL(16,2),
+        distrito INT,
+        nroHabde int,
+        nroHabhasta int,
+        nroBanosde int,
+        nroBanoshasta int,
+        hPatio BOOLEAN,
+        hJardin BOOLEAN,
+        nombreContacto varchar(1000),
+        correoElectronico varchar(1000),
+        staActivo BOOLEAN
+);
 
 insert into tipoInmueble(codigo,descripcion) values(1,'CASA');
 insert into tipoInmueble(codigo,descripcion)  values(2,'DEPARTAMENTO');
@@ -133,10 +151,10 @@ insert into inmuebles (tipoInmueble, area, distrito,direccion,nroHab,nroBanos,hP
                 1,2,36,'Jr. Arequipa 3866',3,4,true,false,'No hay observaciones');
         
 insert into persona (tipoPersona, numRazSocial, docId,telefono,celular,correo) values (
-                1,'Denisse Marquez','44547116','5722280','998928431','dmc_24x2@hotmail.com');
+                1,'Denisse Marquez','87551203','5722280','998928431','dmc_24x2@hotmail.com');
 
 insert into detalleSolicitud (codigoInmueble, codigoPersona, codigoEstado,activo,credat) values (
-                0,0,2,true,'20/07/2012');
+                0,0,6,true,'20/07/2012');
 
 
 insert into inmuebles (tipoInmueble, area, distrito,direccion,nroHab,nroBanos,hPatio,hJardin,observaciones) values (

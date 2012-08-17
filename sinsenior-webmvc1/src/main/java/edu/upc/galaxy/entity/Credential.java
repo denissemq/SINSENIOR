@@ -2,10 +2,7 @@ package edu.upc.galaxy.entity;
 
 import java.io.Serializable;
 
-/**
- *
- * @author gian
- */
+
 public class Credential implements Serializable {
     private String correo;
     private String password;

@@ -7,10 +7,11 @@
 <div class="navbar">      
     <div class="navbar-inner">
         <div class="container">
-            <a href="javascript:void(0);" class="brand">Canchas Online</a>
+            <a href="javascript:void(0);" class="brand">SinSenior Online</a>
 
         <ul class="nav">
-            <li class=""><a href="<c:url value='/pages/canchas/indexcomenta'/>">Canchas</a></li>
+            			<li class=""><a href="<c:url value='/pages/inmuebles/venta'/>">Venta</a></li>
+			<li class=""><a href="<c:url value='/pages/inmuebles/compra'/>">Compra</a></li>
 
         </ul>            
             

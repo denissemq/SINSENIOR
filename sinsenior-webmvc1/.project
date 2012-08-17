@@ -3,6 +3,7 @@
 	<name>spring-webmvc</name>
 	<comment></comment>
 	<projects>
+		<project>wscliente</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

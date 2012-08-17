@@ -7,7 +7,7 @@
 <div class="navbar">      
     <div class="navbar-inner">
         <div class="container">
-            <a href="javascript:void(0);" class="brand">Canchas Online</a>
+            <a href="javascript:void(0);" class="brand">inmuebles Online</a>
         </div>
     </div><!-- /topbar-inner -->
 </div>

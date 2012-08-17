@@ -3,14 +3,12 @@
 <div class="navbar">      
     <div class="navbar-inner">
         <div class="container">
-        <a href="javascript:void(0);" class="brand">Canchas Online</a>
+        <a href="javascript:void(0);" class="brand">SinSenior Online</a>
         <ul class="nav">
+            <li class=""><a href="<c:url value='/pages/citas/pendientes'/>">Citas Pendientes</a></li>
+            <li class=""><a href="<c:url value='/pages/citas/disponibles'/>">Citas Disponibles</a></li>
+            <li class=""><a href="<c:url value='/pages/inmuebles/index'/>">Inmuebles</a></li>
             <li class=""><a href="<c:url value='/pages/usuarios/index'/>">Usuarios</a></li>
-            <li class=""><a href="<c:url value='/pages/locales/index'/>">Locales</a></li>
-            <li class=""><a href="<c:url value='/pages/canchas/index'/>">Canchas</a></li>
-            <li class=""><a href="<c:url value='/pages/servicios/index'/>">Servicios</a></li>
-            <li class=""><a href="<c:url value='/pages/publicidades/index'/>">Publicidades</a></li>
-            <li class=""><a href="<c:url value='/pages/eventos/index'/>">Eventos</a></li>
         </ul>
 
 

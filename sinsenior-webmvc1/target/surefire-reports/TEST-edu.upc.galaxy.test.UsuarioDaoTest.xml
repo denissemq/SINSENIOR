@@ -1,66 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="4.798" errors="0" skipped="0" tests="1" name="edu.upc.galaxy.test.UsuarioDaoTest">
+<testsuite failures="0" time="1.17" errors="0" skipped="0" tests="1" name="edu.upc.galaxy.test.UsuarioDaoTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_03\jre\bin"/>
-    <property name="java.vm.version" value="22.1-b02"/>
-    <property name="user.country.format" value="PE"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_24\jre\bin"/>
+    <property name="java.vm.version" value="19.1-b02"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
     <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
-    <property name="user.country" value="ES"/>
+    <property name="user.country" value="PE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\Borrar\ProyectoSportGalaxy\sportgalaxy-webmvc-grupo"/>
-    <property name="java.runtime.version" value="1.7.0_03-b05"/>
-    <property name="netbeans.deploy" value="true"/>
+    <property name="user.dir" value="C:\Users\alumnos\SINSENIOR\sinsenior-webmvc1"/>
+    <property name="java.runtime.version" value="1.6.0_24-b07"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_03\jre\lib\endorsed"/>
+    <property name="basedir" value="C:\Users\alumnos\SINSENIOR\sinsenior-webmvc1"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_24\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="java.io.tmpdir" value="C:\Users\Alvaro\AppData\Local\Temp\"/>
+    <property name="surefire.real.class.path" value="C:\Users\alumnos\SINSENIOR\sinsenior-webmvc1\target\surefire\surefirebooter1728480986574282007.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\alumnos\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Program Files\NetBeans 7.1.1\java\maven\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_03\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Windows Live\Shared;C:\Program Files\TortoiseSVN\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_24\jre\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\operador\product\11.1.0\db_1\bin;c:\ORANT\bin;C:\Program Files\Rockwell Software\RSCommon;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Kaspersky Lab\Kaspersky Anti-Virus 6.0 for Windows Workstations MP4\;C:\LINGO10\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\Rational\common;C:\Program Files\Rational\ClearCase\bin;C:\ProModel 2001;C:\Program Files\TortoiseSVN\bin;c:\ORANT\jdk\bin;c:\ORANT\bin;C:\Program Files\Rockwell Software\RSCommon;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Kaspersky Lab\Kaspersky Anti-Virus 6.0 for Windows Workstations MP4\;C:\LINGO10\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\Rational\common;C:\Program Files\Rational\ClearCase\bin;C:\ProModel 2001;C:\Program Files\TortoiseSVN\bin;c:\ORANT\jdk\bin"/>
+    <property name="surefire.test.class.path" value="C:\Users\alumnos\SINSENIOR\sinsenior-webmvc1\target\test-classes;C:\Users\alumnos\SINSENIOR\sinsenior-webmvc1\target\classes;C:\Users\operador\.m2\repository\org\springframework\spring-core\3.0.5.RELEASE\spring-core-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-asm\3.0.5.RELEASE\spring-asm-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-test\3.0.5.RELEASE\spring-test-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-web\3.0.5.RELEASE\spring-web-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\operador\.m2\repository\org\springframework\spring-beans\3.0.5.RELEASE\spring-beans-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-context\3.0.5.RELEASE\spring-context-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-webmvc\3.0.5.RELEASE\spring-webmvc-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-expression\3.0.5.RELEASE\spring-expression-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-jdbc\3.0.5.RELEASE\spring-jdbc-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-tx\3.0.5.RELEASE\spring-tx-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-orm\3.0.5.RELEASE\spring-orm-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-context-support\3.0.5.RELEASE\spring-context-support-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\security\spring-security-core\3.0.5.RELEASE\spring-security-core-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-aop\3.0.3.RELEASE\spring-aop-3.0.3.RELEASE.jar;C:\Users\operador\.m2\repository\org\aspectj\aspectjrt\1.6.8\aspectjrt-1.6.8.jar;C:\Users\operador\.m2\repository\org\aspectj\aspectjweaver\1.6.8\aspectjweaver-1.6.8.jar;C:\Users\operador\.m2\repository\org\springframework\security\spring-security-config\3.0.5.RELEASE\spring-security-config-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\security\spring-security-web\3.0.5.RELEASE\spring-security-web-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\security\spring-security-taglibs\3.0.5.RELEASE\spring-security-taglibs-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\security\spring-security-acl\3.0.5.RELEASE\spring-security-acl-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\javax\enterprise\cdi-api\1.0-SP1\cdi-api-1.0-SP1.jar;C:\Users\operador\.m2\repository\org\jboss\interceptor\jboss-interceptor-api\1.1\jboss-interceptor-api-1.1.jar;C:\Users\operador\.m2\repository\javax\annotation\jsr250-api\1.0\jsr250-api-1.0.jar;C:\Users\operador\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\operador\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\operador\.m2\repository\javax\servlet\jsp\jsp-api\2.1\jsp-api-2.1.jar;C:\Users\operador\.m2\repository\javax\servlet\jstl\1.1.2\jstl-1.1.2.jar;C:\Users\operador\.m2\repository\taglibs\standard\1.1.2\standard-1.1.2.jar;C:\Users\operador\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar;C:\Users\operador\.m2\repository\commons-dbcp\commons-dbcp\1.2.2\commons-dbcp-1.2.2.jar;C:\Users\operador\.m2\repository\commons-pool\commons-pool\1.3\commons-pool-1.3.jar;C:\Users\operador\.m2\repository\org\apache\tiles\tiles-api\2.1.4\tiles-api-2.1.4.jar;C:\Users\operador\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar;C:\Users\operador\.m2\repository\org\apache\tiles\tiles-core\2.1.4\tiles-core-2.1.4.jar;C:\Users\operador\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\operador\.m2\repository\commons-beanutils\commons-beanutils\1.8.0\commons-beanutils-1.8.0.jar;C:\Users\operador\.m2\repository\org\apache\tiles\tiles-jsp\2.1.4\tiles-jsp-2.1.4.jar;C:\Users\operador\.m2\repository\org\apache\tiles\tiles-servlet\2.1.4\tiles-servlet-2.1.4.jar;C:\Users\operador\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.6.4\jackson-mapper-asl-1.6.4.jar;C:\Users\operador\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.6.4\jackson-core-asl-1.6.4.jar;C:\Users\operador\.m2\repository\org\hsqldb\hsqldb\2.2.8\hsqldb-2.2.8.jar;C:\Users\operador\.m2\repository\org\slf4j\slf4j-api\1.5.11\slf4j-api-1.5.11.jar;C:\Users\operador\.m2\repository\org\slf4j\jcl-over-slf4j\1.5.11\jcl-over-slf4j-1.5.11.jar;C:\Users\operador\.m2\repository\org\slf4j\slf4j-log4j12\1.5.11\slf4j-log4j12-1.5.11.jar;C:\Users\operador\.m2\repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;C:\Users\operador\.m2\repository\junit\junit\4.8.2\junit-4.8.2.jar;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="51.0"/>
+    <property name="java.class.version" value="50.0"/>
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
     <property name="os.version" value="6.1"/>
-    <property name="user.home" value="C:\Users\Alvaro"/>
+    <property name="user.home" value="C:\Users\operador"/>
     <property name="user.timezone" value="America/Bogota"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.7"/>
+    <property name="java.specification.version" value="1.6"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="Alvaro"/>
-    <property name="java.class.path" value="C:\Program Files\NetBeans 7.1.1\java\maven\bin\..\boot\plexus-classworlds-2.4.jar"/>
-    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="user.name" value="alumnos"/>
+    <property name="java.class.path" value="C:\Users\alumnos\SINSENIOR\sinsenior-webmvc1\target\test-classes;C:\Users\alumnos\SINSENIOR\sinsenior-webmvc1\target\classes;C:\Users\operador\.m2\repository\org\springframework\spring-core\3.0.5.RELEASE\spring-core-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-asm\3.0.5.RELEASE\spring-asm-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-test\3.0.5.RELEASE\spring-test-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-web\3.0.5.RELEASE\spring-web-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\operador\.m2\repository\org\springframework\spring-beans\3.0.5.RELEASE\spring-beans-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-context\3.0.5.RELEASE\spring-context-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-webmvc\3.0.5.RELEASE\spring-webmvc-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-expression\3.0.5.RELEASE\spring-expression-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-jdbc\3.0.5.RELEASE\spring-jdbc-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-tx\3.0.5.RELEASE\spring-tx-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-orm\3.0.5.RELEASE\spring-orm-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-context-support\3.0.5.RELEASE\spring-context-support-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\security\spring-security-core\3.0.5.RELEASE\spring-security-core-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\spring-aop\3.0.3.RELEASE\spring-aop-3.0.3.RELEASE.jar;C:\Users\operador\.m2\repository\org\aspectj\aspectjrt\1.6.8\aspectjrt-1.6.8.jar;C:\Users\operador\.m2\repository\org\aspectj\aspectjweaver\1.6.8\aspectjweaver-1.6.8.jar;C:\Users\operador\.m2\repository\org\springframework\security\spring-security-config\3.0.5.RELEASE\spring-security-config-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\security\spring-security-web\3.0.5.RELEASE\spring-security-web-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\security\spring-security-taglibs\3.0.5.RELEASE\spring-security-taglibs-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\org\springframework\security\spring-security-acl\3.0.5.RELEASE\spring-security-acl-3.0.5.RELEASE.jar;C:\Users\operador\.m2\repository\javax\enterprise\cdi-api\1.0-SP1\cdi-api-1.0-SP1.jar;C:\Users\operador\.m2\repository\org\jboss\interceptor\jboss-interceptor-api\1.1\jboss-interceptor-api-1.1.jar;C:\Users\operador\.m2\repository\javax\annotation\jsr250-api\1.0\jsr250-api-1.0.jar;C:\Users\operador\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\operador\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\operador\.m2\repository\javax\servlet\jsp\jsp-api\2.1\jsp-api-2.1.jar;C:\Users\operador\.m2\repository\javax\servlet\jstl\1.1.2\jstl-1.1.2.jar;C:\Users\operador\.m2\repository\taglibs\standard\1.1.2\standard-1.1.2.jar;C:\Users\operador\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar;C:\Users\operador\.m2\repository\commons-dbcp\commons-dbcp\1.2.2\commons-dbcp-1.2.2.jar;C:\Users\operador\.m2\repository\commons-pool\commons-pool\1.3\commons-pool-1.3.jar;C:\Users\operador\.m2\repository\org\apache\tiles\tiles-api\2.1.4\tiles-api-2.1.4.jar;C:\Users\operador\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar;C:\Users\operador\.m2\repository\org\apache\tiles\tiles-core\2.1.4\tiles-core-2.1.4.jar;C:\Users\operador\.m2\repository\commons-digester\commons-digester\1.8.1\commons-digester-1.8.1.jar;C:\Users\operador\.m2\repository\commons-beanutils\commons-beanutils\1.8.0\commons-beanutils-1.8.0.jar;C:\Users\operador\.m2\repository\org\apache\tiles\tiles-jsp\2.1.4\tiles-jsp-2.1.4.jar;C:\Users\operador\.m2\repository\org\apache\tiles\tiles-servlet\2.1.4\tiles-servlet-2.1.4.jar;C:\Users\operador\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.6.4\jackson-mapper-asl-1.6.4.jar;C:\Users\operador\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.6.4\jackson-core-asl-1.6.4.jar;C:\Users\operador\.m2\repository\org\hsqldb\hsqldb\2.2.8\hsqldb-2.2.8.jar;C:\Users\operador\.m2\repository\org\slf4j\slf4j-api\1.5.11\slf4j-api-1.5.11.jar;C:\Users\operador\.m2\repository\org\slf4j\jcl-over-slf4j\1.5.11\jcl-over-slf4j-1.5.11.jar;C:\Users\operador\.m2\repository\org\slf4j\slf4j-log4j12\1.5.11\slf4j-log4j12-1.5.11.jar;C:\Users\operador\.m2\repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;C:\Users\operador\.m2\repository\junit\junit\4.8.2\junit-4.8.2.jar;"/>
+    <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="32"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_03\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dnetbeans.deploy=true package"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_24\jre"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="es"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="1.7.0_03"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_03\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_03\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_03\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_03\jre\classes"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Program Files\NetBeans 7.1.1\java\maven\bin\.."/>
+    <property name="java.version" value="1.6.0_24"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_24\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_24\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_24\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_24\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_24\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_24\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_24\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_24\jre\lib\modules\jdk.boot.jar;C:\Program Files\Java\jdk1.6.0_24\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="C:\Users\operador\.m2\repository"/>
     <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="3.87" classname="edu.upc.galaxy.test.UsuarioDaoTest" name="testInsertarUsuario"/>
+  <testcase time="0.967" classname="edu.upc.galaxy.test.UsuarioDaoTest" name="testInsertarUsuario"/>
 </testsuite>

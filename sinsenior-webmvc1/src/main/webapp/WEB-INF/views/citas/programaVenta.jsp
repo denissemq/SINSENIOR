@@ -14,9 +14,19 @@
                 </div>
             </div>
             <div class="control-group">
+                <label>Tipo persona:</label>
+                <div class="controls">
+                    
+                    <form:select path="tipoPersona" id="tipoPersona">
+					<form:options items="${listTipoPersona}"  itemValue="codigo" itemLabel="descripcion"/>
+					</form:select>
+                    <form:errors path="tipoPersona" cssstyle="color:red"></form:errors>
+                </div>
+            </div> 
+            <div class="control-group">
                 <label>DNI/RUC:</label>
                 <div class="controls">
-                    <form:input path="docId"></form:input>
+                    <form:input path="docId" readOnly="true"></form:input>
                     <form:errors path="docId" cssstyle="color:red"></form:errors>
                 </div>
             </div>
@@ -24,7 +34,7 @@
             <div class="control-group">
                 <label>Nombre/Razon Social:</label>
                 <div class="controls">
-                    <form:input path="numRazSocial"></form:input>
+                    <form:textarea path="numRazSocial" readOnly="true"  rows="2" style="width:450px" ></form:textarea>
                     <form:errors path="numRazSocial" cssstyle="color:red"></form:errors>
                 </div>
             </div>
@@ -32,13 +42,14 @@
             <div class="control-group">
                 <label></label>
                 <div class="controls">
-                    <a style="margin-left: 5px; " class="btn btn-primary">Validar</a>
+                     <a style="margin-left: 5px; " class="btn btn-primary" href="<c:url value='/pages/citas/ValidarRegpublicos?tipoPersona=${cita.tipoPersona}&docId=${cita.docId}&id=${cita.codigo}'/>">Validar</a>
+            
                 </div>
             </div> 
             <div class="control-group">
                 <label>Observaciones:</label>
                 <div class="controls">
-                    <form:input path="observacionesic"></form:input>
+                    <form:textarea path="observacionesic"  rows="4" style="width:450px" ></form:textarea>
                     <form:errors path="observacionesic" cssstyle="color:red"></form:errors>
                 </div>
             </div>
@@ -55,14 +66,14 @@
             <div class="control-group">
                 <label>Area:</label>
                 <div class="controls">
-                    <form:input path="area"></form:input>
+                    <form:input path="area" readOnly="true"></form:input>
                     <form:errors path="area" cssstyle="color:red"></form:errors>
                 </div>
             </div>
             <div class="control-group">
                 <label>Distrito</label>
                 <div class="controls">
-                    <form:select path="distrito" id="distrito">
+                    <form:select path="distrito" id="distrito" readOnly="true">
 					<form:options items="${listDistrito}"  itemValue="codigo" itemLabel="descripcion"/>
 					</form:select>
                     <form:errors path="distrito" cssstyle="color:red"></form:errors>
@@ -71,40 +82,40 @@
             <div class="control-group">
                 <label>Dirección</label>
                 <div class="controls">
-                    <form:input path="direccion"></form:input>
+                    <form:textarea path="direccion" readOnly="true"  rows="2" style="width:450px" ></form:textarea>
                     <form:errors path="direccion" cssstyle="color:red"></form:errors>
                 </div>
             </div> 
             <div class="control-group">
                 <label>Nro. Habitaciones</label>
                 <div class="controls">
-                    <form:input path="nroHab"></form:input>
+                    <form:input path="nroHab" readOnly="true"></form:input>
                     <form:errors path="nroHab" cssstyle="color:red"></form:errors>
                 </div>
             </div> 
             <div class="control-group">
                 <label>Nro. Baños</label>
                 <div class="controls">
-                    <form:input path="nroBanos"></form:input>
+                    <form:input path="nroBanos" readOnly="true"></form:input>
                     <form:errors path="nroBanos" cssstyle="color:red"></form:errors>
                 </div>
             </div> 
             <div class="control-group">
                 <label>Patio</label>
                 <div class="controls">
-                    <form:checkbox path="hPatio"  ></form:checkbox>
+                    <form:checkbox path="hPatio"   readOnly="true"></form:checkbox>
                 </div>
             </div> 
             <div class="control-group">
                 <label>Jardin</label>
                 <div class="controls">
-                    <form:checkbox path="hJardin"  ></form:checkbox>
+                    <form:checkbox path="hJardin"   readOnly="true"></form:checkbox>
                 </div>
             </div> 
             <div class="control-group">
                 <label>Observaciones</label>
                 <div class="controls">
-                    <form:input path="observaciones"></form:input>
+                    <form:textarea path="observaciones" readOnly="true"  rows="5" style="width:450px" ></form:textarea>
                     <form:errors path="observaciones" cssstyle="color:red"></form:errors>
                 </div>
             </div> 

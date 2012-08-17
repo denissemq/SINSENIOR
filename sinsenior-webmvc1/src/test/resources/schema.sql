@@ -78,6 +78,26 @@ CREATE TABLE detalleSolicitud
 );
 
 
+drop table preferencias if exists;
+CREATE TABLE preferencias
+(
+        codigo identity,
+        tipoInmueble INT,
+        areade DECIMAL(16,2),
+        areahasta DECIMAL(16,2),
+        distrito INT,
+        nroHabde int,
+        nroHabhasta int,
+        nroBanosde int,
+        nroBanoshasta int,
+        hPatio BOOLEAN,
+        hJardin BOOLEAN,
+        nombreContacto varchar(1000),
+        correoElectronico varchar(1000),
+        staActivo BOOLEAN
+);
+
+
 insert into tipoInmueble(codigo,descripcion) values(1,'CASA');
 insert into tipoInmueble(codigo,descripcion)  values(2,'DEPARTAMENTO');
 insert into tipoPersona(codigo,descripcion)  values(1,'NATURAL');

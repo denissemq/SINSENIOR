@@ -7,8 +7,9 @@
 
 
         <ul class="nav">
-			<li class=""><a href="<c:url value='/pages/citas/venta'/>">Venta</a></li>
-			<li class=""><a href="<c:url value='/pages/citas/compra'/>">Compra</a></li>
+			<li class=""><a href="<c:url value='/pages/inmuebles/venta'/>">Venta</a></li>
+			<li class=""><a href="<c:url value='/pages/inmuebles/compra'/>">Compra</a></li>
+			<li class=""><a href="<c:url value='/pages/inmuebles/suscripcion'/>">Suscripcion</a></li>
            
         </ul>
 

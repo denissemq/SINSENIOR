@@ -4,6 +4,7 @@ import edu.upc.galaxy.dao.InmuebleDao;
 import edu.upc.galaxy.dao.impl.InmuebleDaoImpl;
 import edu.upc.galaxy.entity.DropDownList;
 import edu.upc.galaxy.entity.Inmueble;
+import edu.upc.galaxy.entity.inmueblesLista;
 import edu.upc.galaxy.service.InmuebleService;
 import java.util.List;
 import org.slf4j.Logger;
@@ -30,7 +31,19 @@ public class InmuebleServiceImpl implements InmuebleService {
         return inmuebleDao.insertar(Inmueble);
     }
 
-   
+    @Override
+    public Integer suscribir(inmueblesLista Inmueble) {
+        log.info("Suscribir Inmueble");
+        return inmuebleDao.suscribir(Inmueble);
+    }
+
+    @Override
+    public Integer solicita(Inmueble Inmueble) {
+        log.info("suscribe Inmueble");
+        return inmuebleDao.solicita(Inmueble);
+    }
+
+    
     @Override
     public void actualizar(Inmueble Inmueble) {
         log.info("Actualizando Inmueble");
@@ -66,9 +79,23 @@ public class InmuebleServiceImpl implements InmuebleService {
     }
 
     @Override
-    public List<Inmueble> buscarFiltro(Integer codigoDistrito, Integer codigoInmueble,Integer deArea, Integer HastaArea,Integer deHab, Integer HastaHab) {
+    public inmueblesLista buscarFiltro(String codigoDistrito, String codigoInmueble,String deArea, String HastaArea,String deHab, String HastaHab) {
         log.info("Buscar Inmueble por id" + codigoDistrito);
         return inmuebleDao.buscarFiltro( codigoDistrito,  codigoInmueble, deArea,  HastaArea, deHab,  HastaHab);
     }
+
+	@Override
+	public List<inmueblesLista> buscarPreferencias() {
+
+        log.info("Buscando Preferencias");
+        return inmuebleDao.buscarPreferencias();
+	}
+
+	@Override
+	public void AnulSuscrip(Integer id) {
+        log.info("Eliminando Preferencias");
+        inmuebleDao.AnulSuscrip(id);
+		
+	}
     
 }

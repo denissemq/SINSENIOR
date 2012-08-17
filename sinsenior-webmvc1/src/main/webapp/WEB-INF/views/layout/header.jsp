@@ -8,6 +8,7 @@
             <li class=""><a href="<c:url value='/pages/citas/pendientes'/>">Citas Pendientes</a></li>
             <li class=""><a href="<c:url value='/pages/citas/disponibles'/>">Citas Disponibles</a></li>
             <li class=""><a href="<c:url value='/pages/inmuebles/index'/>">Inmuebles</a></li>
+            <li class=""><a href="<c:url value='/pages/inmuebles/suscripciones'/>">Suscripciones</a></li>
             <li class=""><a href="<c:url value='/pages/usuarios/index'/>">Usuarios</a></li>
         </ul>
 

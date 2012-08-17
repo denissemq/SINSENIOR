@@ -14,9 +14,19 @@
                 </div>
             </div>
             <div class="control-group">
+                <label>Tipo persona:</label>
+                <div class="controls">
+                    
+                    <form:select path="tipoPersona" id="tipoPersona" >
+					<form:options items="${listTipoPersona}"  itemValue="codigo" itemLabel="descripcion"/>
+					</form:select>
+                    <form:errors path="tipoPersona" cssstyle="color:red"></form:errors>
+                </div>
+            </div> 
+            <div class="control-group">
                 <label>DNI/RUC:</label>
                 <div class="controls">
-                    <form:input path="docId"></form:input>
+                    <form:input path="docId" readOnly="true"></form:input>
                     <form:errors path="docId" cssstyle="color:red"></form:errors>
                 </div>
             </div>
@@ -24,7 +34,7 @@
             <div class="control-group">
                 <label>Nombre/Razon Social:</label>
                 <div class="controls">
-                    <form:input path="numRazSocial"></form:input>
+                    <form:input path="numRazSocial" readOnly="true"></form:input>
                     <form:errors path="numRazSocial" cssstyle="color:red"></form:errors>
                 </div>
             </div>
@@ -32,14 +42,15 @@
             <div class="control-group">
                 <label></label>
                 <div class="controls">
-                    <a style="margin-left: 5px; " class="btn btn-primary">Validar</a>
+                     <a style="margin-left: 5px; " class="btn btn-primary" href="<c:url value='/pages/citas/ValidarInfocorp?tipoPersona=${cita.tipoPersona}&docId=${cita.docId}&id=${cita.codigo}'/>">Validar</a>
+            
                 </div>
             </div> 
                  
             <div class="control-group">
                 <label>Observaciones:</label>
                 <div class="controls">
-                    <form:input path="observacionesic"></form:input>
+                    <form:textarea path="observacionesic"  rows="4" style="width:450px" ></form:textarea>
                     <form:errors path="observacionesic" cssstyle="color:red"></form:errors>
                 </div>
             </div>

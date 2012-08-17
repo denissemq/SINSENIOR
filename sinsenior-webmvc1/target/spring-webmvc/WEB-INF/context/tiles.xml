@@ -9,10 +9,6 @@
 		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
 	</definition>       
 
-
-
-
-
 	<definition name="usuarios/index" extends="defaultTemplate">
 		<put-attribute name="body" value="/WEB-INF/views/usuarios/index.jsp" />
 	</definition>
@@ -52,103 +48,89 @@
             <put-attribute name="body" value="/WEB-INF/views/locales/login.jsp"/>
             <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
         </definition>   
-        
-        
-        
+      
 
-	<definition name="canchas/index" extends="defaultTemplate">
-	     <put-attribute name="body" value="/WEB-INF/views/canchas/index.jsp" />
+       
+
+	<definition name="inmuebles/index" extends="defaultTemplate">
+	     <put-attribute name="body" value="/WEB-INF/views/inmuebles/index.jsp" />
 	</definition>
 
-        <definition name="canchas/indexcomenta" extends="defaultTemplate">
-		<put-attribute name="header" value="/WEB-INF/views/canchas/header_navegante.jsp" />
-		<put-attribute name="body" value="/WEB-INF/views/canchas/indexcomenta.jsp" />
+        <definition name="inmuebles/indexcomenta" extends="defaultTemplate">
+		<put-attribute name="header" value="/WEB-INF/views/inmuebles/header_navegante.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/inmuebles/indexcomenta.jsp" />
 	</definition>   
          
          
          
-         <definition name="canchas/editcomenta" extends="defaultTemplate">
-            <put-attribute name="body" value="/WEB-INF/views/canchas/editcomenta.jsp"/>
+         <definition name="inmuebles/editcomenta" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/inmuebles/editcomenta.jsp"/>
         </definition>       
         
         
-        <definition name="canchas/new" extends="defaultTemplate">
-            <put-attribute name="body" value="/WEB-INF/views/canchas/new.jsp"/>
+        <definition name="inmuebles/compra" extends="defaultTemplate">
+		<put-attribute name="header" value="/WEB-INF/views/inmuebles/header_navegante.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/inmuebles/indexcomenta.jsp" />
         </definition>
         
-        <definition name="canchas/edit" extends="defaultTemplate">
-            <put-attribute name="body" value="/WEB-INF/views/canchas/edit.jsp"/>
+        <definition name="inmuebles/venta" extends="defaultTemplate">
+		<put-attribute name="header" value="/WEB-INF/views/inmuebles/header_navegante.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/inmuebles/venta.jsp" />
+        </definition>
+        
+        <definition name="inmuebles/new" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/inmuebles/new.jsp"/>
+        </definition>
+        
+        <definition name="inmuebles/edit" extends="defaultTemplate">
+            <put-attribute name="body" value="/WEB-INF/views/inmuebles/edit.jsp"/>
         </definition>
       
-        <definition name="canchas/login" template="/WEB-INF/views/layout/login.jsp">
-            <put-attribute name="body" value="/WEB-INF/views/canchas/login.jsp"/>
+        <definition name="inmuebles/login" template="/WEB-INF/views/layout/login.jsp">
+            <put-attribute name="body" value="/WEB-INF/views/inmuebles/login.jsp"/>
             <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
         </definition>
 
-                
-                
-                
-                
-        
-  
-	<definition name="servicios/index" extends="defaultTemplate">
-		<put-attribute name="body" value="/WEB-INF/views/servicios/index.jsp" />
+    <definition name="citas/pendientes" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/citas/pendientes.jsp" />
+	</definition>
+	<definition name="citas/disponibles" extends="defaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/citas/disponibles.jsp" />
 	</definition>
         
-        <definition name="servicios/new" extends="defaultTemplate">
-            <put-attribute name="body" value="/WEB-INF/views/servicios/new.jsp"/>
-        </definition>
-        
-        <definition name="servicios/edit" extends="defaultTemplate">
-            <put-attribute name="body" value="/WEB-INF/views/servicios/edit.jsp"/>
-        </definition>
-        
-        <definition name="servicios/login" template="/WEB-INF/views/layout/login.jsp">
-            <put-attribute name="body" value="/WEB-INF/views/servicios/login.jsp"/>
-            <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
-        </definition>
-            
-            
-            
-        
-	<definition name="publicidades/index" extends="defaultTemplate">
-		<put-attribute name="body" value="/WEB-INF/views/publicidades/index.jsp" />
-	</definition>
-        
-        <definition name="publicidades/new" extends="defaultTemplate">
-            <put-attribute name="body" value="/WEB-INF/views/publicidades/new.jsp"/>
-        </definition>
-        
-        <definition name="publicidades/edit" extends="defaultTemplate">
-            <put-attribute name="body" value="/WEB-INF/views/publicidades/edit.jsp"/>
-        </definition>
-        
-        <definition name="publicidades/login" template="/WEB-INF/views/layout/login.jsp">
-            <put-attribute name="body" value="/WEB-INF/views/publicidades/login.jsp"/>
-            <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
-        </definition>
-                   
-        
-        
-        
-         
-        
-	<definition name="eventos/index" extends="defaultTemplate">
-		<put-attribute name="body" value="/WEB-INF/views/eventos/index.jsp" />
-	</definition>
-        
-        <definition name="eventos/new" extends="defaultTemplate">
-            <put-attribute name="body" value="/WEB-INF/views/eventos/new.jsp"/>
-        </definition>
-        
-        <definition name="eventos/edit" extends="defaultTemplate">
-            <put-attribute name="body" value="/WEB-INF/views/eventos/edit.jsp"/>
-        </definition>
-        
-        <definition name="eventos/login" template="/WEB-INF/views/layout/login.jsp">
-            <put-attribute name="body" value="/WEB-INF/views/eventos/login.jsp"/>
-            <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
-        </definition>
+    <definition name="citas/new" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/citas/new.jsp"/>
+    </definition>
+    
+    <definition name="citas/edit" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/citas/edit.jsp"/>
+    </definition>
+    
+    <definition name="citas/login" template="/WEB-INF/views/layout/login.jsp">
+        <put-attribute name="body" value="/WEB-INF/views/citas/login.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+    </definition>
+    
+    <definition name="citas/editPendiente" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/citas/editPendiente.jsp"/>
+    </definition>
+    
+    <definition name="citas/programaCompra" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/citas/programaCompra.jsp"/>
+    </definition>
+    
+    <definition name="citas/programaVenta" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/citas/programaVenta.jsp"/>
+    </definition>
+    
+
+    <definition name="citas/aceptarOperacion" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/citas/infoInmueble.jsp"/>
+    </definition>
+    
+    <definition name="citas/ValidarDocumento" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/citas/editPendiente.jsp"/>
+    </definition>
                    
         
         

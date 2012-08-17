@@ -83,7 +83,7 @@
         </div>
         <div class="actions" style="margin-left: 160px;">
             <input name="" value="Editar" type="submit" class="btn btn-primary">
-            <a style="margin-left: 5px;" href="<c:url value='/pages/usuarios/index'/>">Cancelar</a>
+            <a style="margin-left: 5px;" href="<c:url value='/pages/usuarios/index'/>" class="btn btn-primary">Cancelar</a>
         </div>
     </form:form>
 </div>

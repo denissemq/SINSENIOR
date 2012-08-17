@@ -38,7 +38,7 @@
         <property name="location" value="classpath:messages.properties"/>
     </bean>  
     
-    <context:property-placeholder location="classpath:spring_webmvc/config.properties"></context:property-placeholder>
+    <context:property-placeholder location="classpath:config.properties"></context:property-placeholder>
     
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driverClassName}"/>
