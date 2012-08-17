@@ -6,9 +6,27 @@ import java.io.Serializable;
 public class Credential implements Serializable {
     private String correo;
     private String password;
+    private String nombre;
+    private String apellidos;
     private String id;
 
-    public String getId() {
+    public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	public String getId() {
 		return id;
 	}
 

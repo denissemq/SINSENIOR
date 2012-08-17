@@ -17,7 +17,7 @@
 
 
             <div class="right" style="color:white;line-height: 40px;">
-            Bienvenido ${credential.correo} | <a href="<c:url value='/pages/usuarios/logout'/>">Salir</a>
+            Bienvenido ${credential.nombre}  ${credential.apellidos}  | <a href="<c:url value='/pages/usuarios/logout'/>">Salir</a>
         </div>
         </div>
     </div><!-- /topbar-inner -->

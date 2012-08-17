@@ -231,7 +231,6 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
-<<<<<<< HEAD
                <plugin>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-codegen-plugin</artifactId>
@@ -258,10 +257,6 @@
                 </executions>
             </plugin>
               
-=======
-            
-           
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
         </plugins>
         <resources>
             <resource>

@@ -24,7 +24,6 @@ function PriceMask( toField )
     }
     
 }
-<<<<<<< HEAD
 function validateInfo(){
 	  var VDataOK = false;
 
@@ -68,8 +67,6 @@ function validateInfo(){
           return true;
       }
 }
-=======
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
 function fn_formatDecimal(nDecimal){
     fn_formatNumberDecimal(nDecimal,true,true,true,true,true);
 }
@@ -115,7 +112,6 @@ function formatNumber(num,decimalNum,bolLeadingZero,bolParens,bolCommas){
 
 	// Create a string object to do our formatting on
 	var tmpNumStr = new String(tmpNum);
-<<<<<<< HEAD
 
 	// See if we need to strip out the leading zero or not.
 	if (!bolLeadingZero && num < 1 && num > -1 && num != 0){
@@ -146,38 +142,6 @@ function formatNumber(num,decimalNum,bolLeadingZero,bolParens,bolCommas){
 		var zeros = ".";
 		var decimalpart = "";
 
-=======
-
-	// See if we need to strip out the leading zero or not.
-	if (!bolLeadingZero && num < 1 && num > -1 && num != 0){
-		
-		if (num > 0){
-			
-			tmpNumStr = tmpNumStr.substring(0,tmpNumStr.length);
-		}else{
-			tmpNumStr = "-" + tmpNumStr.substring(2,tmpNumStr.length);
-		}
-	}
-	// See if we need to put in the commas
-	
-	if (bolCommas && (num >= 1000 || num <= -1000)) {
-		var iStart = tmpNumStr.indexOf(".");
-		if (iStart < 0)
-			iStart = tmpNumStr.length;
-
-		iStart -= 3;
-		while (iStart >= 1) {
-			tmpNumStr = tmpNumStr.substring(0,iStart) + "" + tmpNumStr.substring(iStart,tmpNumStr.length)
-			iStart -= 3;
-		}		
-	}
-
-	if (decimalNum > 0){
-		var pos = tmpNumStr.indexOf(".");
-		var zeros = ".";
-		var decimalpart = "";
-
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
 		if (pos > 0){
 			decimalpart = tmpNumStr.substr(pos + 1,tmpNumStr.length); 
 	
@@ -311,11 +275,7 @@ function elementEmailOnBlur(){
                 <label>Nro. Habitaciones</label>
                 <div class="controls">
                     <form:input path="nroHab"  onkeypress="return PriceMask(this)"  onBlur ="fn_formatDecimal(0);"></form:input>
-<<<<<<< HEAD
                     <form:errors path="nroHab" cssstyle="color:red" ></form:errors>
-=======
-                    <form:errors path="nroHab" cssstyle="color:red"></form:errors>
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
                 </div>
             </div> 
             <div class="control-group">
@@ -407,7 +367,7 @@ function elementEmailOnBlur(){
         </div>
         <div class="actions" style="margin-left: 160px;">
             <input name="" value="Save" type="submit" class="btn btn-primary" onclick="javascript:return validateInfo()">
-            <a style="margin-left: 5px;" href="<c:url value='/pages/usuarios/logout'/>">Cancelar</a>
+            <a  class="btn btn-primary" style="margin-left: 5px;" href="<c:url value='/pages/usuarios/logout'/>">Cancelar</a>
         </div>                
     </form:form>
 </div>

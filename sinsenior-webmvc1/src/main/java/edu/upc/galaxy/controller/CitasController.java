@@ -165,9 +165,7 @@ public class CitasController {
     public ModelAndView ValidarRegpublicos(@RequestParam("tipoPersona")String tipoPersona,@RequestParam("docId")String docId,@RequestParam("id")Integer id, SessionStatus status)
     {
     	ModelAndView mav= new ModelAndView("citas/ValidarRegpublicos");
-
-        Cita cita = citaservice.ValidarRegpublicos(tipoPersona,docId, id);
-
+        Cita cita = citaservice.ValidarRegistros(tipoPersona,docId, id);
 
         mav.getModelMap().put("cita", cita);
         return mav;

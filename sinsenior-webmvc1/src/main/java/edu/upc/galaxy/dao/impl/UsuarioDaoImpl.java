@@ -81,7 +81,7 @@ public class UsuarioDaoImpl extends SimpleJdbcDaoSupport implements UsuarioDao {
     public Credential buscarxCorreo(String correo) {
         try {
                 return getSimpleJdbcTemplate().queryForObject(
-                                "select id,  correo, password from usuarios where correo=?",
+                                "select id,  correo, password, nombre, apellidos from usuarios where correo=?",
                                 new BeanPropertyRowMapper<Credential>(Credential.class), correo);
         } catch (EmptyResultDataAccessException e) {
                 return null;

@@ -116,7 +116,7 @@ public class InmuebleDaoImpl extends SimpleJdbcDaoSupport implements InmuebleDao
     @Override
     public void AnulSuscrip(Integer codigo) {
         getJdbcTemplate().update(
-                "update preferencias set staActivo=0   where id = " + codigo);        
+                "update preferencias set staActivo=0   where codigo = " + codigo);        
     }
     @Override
     public Inmueble buscar(Integer id) {
@@ -196,10 +196,6 @@ public class InmuebleDaoImpl extends SimpleJdbcDaoSupport implements InmuebleDao
 			InmuebleLista.setAreahasta(HastaArea);
 			InmuebleLista.setNroHabde(deHab);
 			InmuebleLista.setNroHabhasta(HastaHab);
-			InmuebleLista.setDearea(deArea);
-			InmuebleLista.setHastaarea(HastaArea);
-			InmuebleLista.setDeHab(deHab);
-			InmuebleLista.setHastaHab(HastaHab);
 			
 			String queryString ;
 			
@@ -275,7 +271,7 @@ public class InmuebleDaoImpl extends SimpleJdbcDaoSupport implements InmuebleDao
 			
 			queryString="select t.descripcion tipoInmuebleDesc,areade ,areahasta ,d.descripcion distritoDesc ," +
 					"nroHabde ,nroHabhasta ,nroBanosde ,nroBanoshasta ,hPatio ,hJardin ,nombreContacto numRazSocial," +
-					"correoElectronico correo " +
+					"correoElectronico correo, codigo " +
              "from preferencias i " +
              "left join tipoInmueble t on i.tipoInmueble=t.codigo " +
              "left join distrito d on i.distrito=d.codigo " +

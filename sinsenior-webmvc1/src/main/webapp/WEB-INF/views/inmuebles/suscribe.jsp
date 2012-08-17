@@ -6,7 +6,6 @@
 <script type="text/javascript" >
 var ErrorInProgress = false;
 var ObjectError = false;
-<<<<<<< HEAD
 function validateInfo(){
 	  var VDataOK = false;
 
@@ -32,8 +31,6 @@ function validateInfo(){
       return true;
   }
 }
-=======
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
 function PriceMask( toField )
 {  
     if (window.event.keyCode!=13)
@@ -370,11 +367,7 @@ function IsValidDate(PossibleDate){
             </div>   
         </div>
         <div class="actions" style="margin-left: 160px;">
-<<<<<<< HEAD
             <input name="" value="Grabar" type="submit" class="btn btn-primary"  onclick="javascript:return validateInfo()">
-=======
-            <input name="" value="Save" type="submit" class="btn btn-primary">
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
             <a style="margin-left: 5px;" href="<c:url value='/pages/inmuebles/compra'/>" class="btn btn-primary">Cancelar</a>
         </div>                
     </form:form>

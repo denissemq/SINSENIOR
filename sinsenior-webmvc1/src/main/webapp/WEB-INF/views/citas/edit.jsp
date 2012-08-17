@@ -22,7 +22,6 @@ function PriceMask( toField )
     }
     
 }
-<<<<<<< HEAD
 function validateInfo(){
 	  var VDataOK = false;
 
@@ -49,12 +48,6 @@ function fn_formatDecimal(nDecimal){
     fn_formatNumberDecimal(nDecimal,true,true,true,true,true);
 }
 
-=======
-function fn_formatDecimal(nDecimal){
-    fn_formatNumberDecimal(nDecimal,true,true,true,true,true);
-}
-
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
 function fn_formatNumberDecimal(DecimalNum,LeadingZero,Parens,Commas,DefaultValue, PreserveValue){
 	var element = event.srcElement;
 	var tmpValue = element.value;

@@ -1,16 +1,5 @@
 package edu.upc.galaxy.service.impl;
 
-<<<<<<< HEAD
-=======
-import edu.upc.galaxy.dao.DropDownListDao;
-import edu.upc.galaxy.dao.impl.CitaDaoImpl;
-import edu.upc.galaxy.dao.impl.DropDownListDaoImpl;
-import edu.upc.galaxy.entity.Cita;
-import edu.upc.galaxy.entity.DropDownList;
-import edu.upc.galaxy.service.CitaService;
-import edu.upc.galaxy.service.DropDownListService;
-
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -24,7 +13,6 @@ import org.springframework.stereotype.Service;
 
 import com.mycompany.servicio.PersonaService;
 import com.mycompany.servicio.PersonaServiceImplService;
-<<<<<<< HEAD
 
 import edu.upc.galaxy.dao.CitaDao;
 import edu.upc.galaxy.dao.impl.CitaDaoImpl;
@@ -32,21 +20,13 @@ import edu.upc.galaxy.entity.Cita;
 import edu.upc.galaxy.service.CitaService;
 
 
-=======
-
-
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
 @Service
 public class CitasServiceImpl implements CitaService {
 
     private static Logger log = LoggerFactory.getLogger(CitaDaoImpl.class);    
     
     @Autowired
-<<<<<<< HEAD
     private CitaDao citaDao;
-=======
-    private edu.upc.galaxy.dao.CitaDao CitaDao;
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
 
     @Override
     public Integer insertar(Cita Cita) {
@@ -105,7 +85,6 @@ public class CitasServiceImpl implements CitaService {
         cita = citaDao.buscar(id);
         if (tipoPersona.equalsIgnoreCase("1")){
         	cita= ValidarReniec(docId,cita);
-<<<<<<< HEAD
         }else{
         	cita= ValidarSUNAT(docId,cita);
         
@@ -114,7 +93,7 @@ public class CitasServiceImpl implements CitaService {
     }
     @Override
 
-    public Cita ValidarRegpublicos(String tipoPersona, String docId, Integer id){
+    public Cita ValidarRegistros(String tipoPersona, String docId, Integer id){
         log.info("Buscar Regpublicos por id");
         Cita cita = new Cita();
         cita = citaDao.buscar(id);
@@ -137,15 +116,10 @@ public class CitasServiceImpl implements CitaService {
         	cita= ValidarRegInfocorp(docId,cita,"JURIDICA");
         }else{
         	cita= ValidarRegInfocorp(docId,cita,"NATURAL");
-=======
-        }else{
-        	cita= ValidarSUNAT(docId,cita);
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
         
         }
         return cita;
     }
-<<<<<<< HEAD
 
     public Cita ValidarRegPubublicos(String docId,Cita cita, String TIPO){
 	
@@ -234,23 +208,6 @@ public class CitasServiceImpl implements CitaService {
 			return cita;
 			
 		}
-=======
-    @Override
-
-    public Cita ValidarRegpublicos(String tipoPersona, String docId, Integer id){
-        log.info("Buscar Regpublicos por id");
-        Cita cita = new Cita();
-        cita = CitaDao.buscar(id);
-        if (tipoPersona.equalsIgnoreCase("1")){
-        	cita= ValidarReniec(docId,cita);
-        }else{
-        	cita= ValidarSUNAT(docId,cita);
-        
-        }
-        return cita;
-    }
-    
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
     public Cita ValidarReniec(String docId,Cita cita){
 	
     	 PersonaServiceImplService service = new PersonaServiceImplService();
