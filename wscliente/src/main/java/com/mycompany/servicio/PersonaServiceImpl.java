@@ -75,6 +75,8 @@ public class PersonaServiceImpl implements PersonaService {
         personasPrueba.add(persona1);
         personasPrueba.add(persona2);
         personasPrueba.add(persona3);
+        personasPrueba.add(persona4);
+        
         
 		return personasPrueba;
 	}

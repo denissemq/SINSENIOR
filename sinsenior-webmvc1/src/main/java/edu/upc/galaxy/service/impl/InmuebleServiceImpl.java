@@ -32,15 +32,12 @@ public class InmuebleServiceImpl implements InmuebleService {
     }
 
     @Override
-<<<<<<< HEAD
     public Integer suscribir(inmueblesLista Inmueble) {
         log.info("Suscribir Inmueble");
         return inmuebleDao.suscribir(Inmueble);
     }
 
     @Override
-=======
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
     public Integer solicita(Inmueble Inmueble) {
         log.info("suscribe Inmueble");
         return inmuebleDao.solicita(Inmueble);

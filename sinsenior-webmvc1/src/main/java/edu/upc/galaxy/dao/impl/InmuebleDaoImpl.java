@@ -122,11 +122,7 @@ public class InmuebleDaoImpl extends SimpleJdbcDaoSupport implements InmuebleDao
     public Inmueble buscar(Integer id) {
     	try {
             return getSimpleJdbcTemplate().queryForObject(
-<<<<<<< HEAD
                     "select codigo ,t.descripcion tipoInmuebleDesc,d.descripcion distritoDesc ,i.direccion," +
-=======
-                            "select codigo ,t.descripcion tipoInmuebleDesc,d.descripcion distritoDesc ,i.direccion," +
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
                     "p.numRazSocial, i.distrito, i.area, i.tipoInmueble,i.nroHab " +
                     "from inmuebles i " +
                     "left join tipoInmueble t on i.tipoInmueble=t.codigo " +
@@ -196,17 +192,14 @@ public class InmuebleDaoImpl extends SimpleJdbcDaoSupport implements InmuebleDao
 			
 			InmuebleLista.setTipoInmueble(codigoInmueble);
 			InmuebleLista.setDistrito(codigoDistrito);
-<<<<<<< HEAD
 			InmuebleLista.setAreade(deArea);
 			InmuebleLista.setAreahasta(HastaArea);
 			InmuebleLista.setNroHabde(deHab);
 			InmuebleLista.setNroHabhasta(HastaHab);
-=======
 			InmuebleLista.setDearea(deArea);
 			InmuebleLista.setHastaarea(HastaArea);
 			InmuebleLista.setDeHab(deHab);
 			InmuebleLista.setHastaHab(HastaHab);
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
 			
 			String queryString ;
 			
@@ -274,7 +267,6 @@ public class InmuebleDaoImpl extends SimpleJdbcDaoSupport implements InmuebleDao
         log.info("codigoautoDetalle" + codigoautoDetalle.toString()+ "-" + Inmueble.getEstado());
         return codigoautoDetalle;
     }
-<<<<<<< HEAD
 
 	@Override
 	public List<inmueblesLista> buscarPreferencias() {
@@ -297,8 +289,6 @@ public class InmuebleDaoImpl extends SimpleJdbcDaoSupport implements InmuebleDao
 	            return null;
 	    }    
     }    
-=======
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
     
 }
 

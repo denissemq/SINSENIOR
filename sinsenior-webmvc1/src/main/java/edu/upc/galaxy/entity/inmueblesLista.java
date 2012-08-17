@@ -10,7 +10,6 @@ public class inmueblesLista  implements Serializable {
 
     private String tipoInmueble;
     private String distrito;
-<<<<<<< HEAD
     private String tipoInmuebleDesc;
     private String distritoDesc;
   
@@ -101,14 +100,18 @@ public class inmueblesLista  implements Serializable {
 		this.hPatio = hPatio;
 	}
 	private List<Inmueble> inmuebles;
-=======
     private String Dearea;
     private String Hastaarea;
     private String DeHab;
     private String HastaHab;
-    private List<Inmueble> inmuebles;
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
+    private String codigo;
     
+	public String getCodigo() {
+		return codigo;
+	}
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
 	public String getTipoInmueble() {
 		return tipoInmueble;
 	}
@@ -121,9 +124,6 @@ public class inmueblesLista  implements Serializable {
 	public void setDistrito(String distrito) {
 		this.distrito = distrito;
 	}
-<<<<<<< HEAD
-	
-=======
 	public String getDearea() {
 		return Dearea;
 	}
@@ -148,7 +148,6 @@ public class inmueblesLista  implements Serializable {
 	public void setHastaHab(String hastaHab) {
 		HastaHab = hastaHab;
 	}
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
 	public List<Inmueble> getInmuebles() {
 		return inmuebles;
 	}

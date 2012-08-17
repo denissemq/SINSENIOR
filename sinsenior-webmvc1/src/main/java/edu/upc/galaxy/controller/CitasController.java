@@ -165,11 +165,9 @@ public class CitasController {
     public ModelAndView ValidarRegpublicos(@RequestParam("tipoPersona")String tipoPersona,@RequestParam("docId")String docId,@RequestParam("id")Integer id, SessionStatus status)
     {
     	ModelAndView mav= new ModelAndView("citas/ValidarRegpublicos");
-<<<<<<< HEAD
+
         Cita cita = citaservice.ValidarRegpublicos(tipoPersona,docId, id);
-=======
-        Cita cita = citaservice.ValidarDocumento(tipoPersona,docId, id);
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
+
 
         mav.getModelMap().put("cita", cita);
         return mav;

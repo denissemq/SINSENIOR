@@ -18,18 +18,10 @@ public interface InmuebleService {
     
     public List<Inmueble> buscarTodosActivos();  
     public Integer solicita(Inmueble Inmueble);
-    
-<<<<<<< HEAD
+
     public Inmueble buscar(Integer id);  
-	public inmueblesLista buscarFiltro(String distrito, String tipoInmueble,
-			String deArea, String hastaArea, String deHab, String hastaHab);
+	public inmueblesLista buscarFiltro(String distrito, String tipoInmueble,String deArea, String hastaArea, String deHab, String hastaHab);
 	public void AnulSuscrip(Integer id);
-=======
-    public List<Inmueble> buscarTodosActivos();  
-    public Integer solicita(Inmueble Inmueble);
+
     
-    public Inmueble buscar(Integer id);  
-	public inmueblesLista buscarFiltro(String distrito, String tipoInmueble,
-			String deArea, String hastaArea, String deHab, String hastaHab);
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
 }

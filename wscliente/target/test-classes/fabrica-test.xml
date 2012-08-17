@@ -7,12 +7,7 @@
 
 
 
-        <jaxws:client id="personaService" serviceClass="com.mycompany.servicio.PersonaService"
-<<<<<<< HEAD
-                address="http://localhost:8086/wspersona/PersonaService" />
-=======
-                address="http://localhost:8087/wspersona/PersonaService" />
->>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
+        <jaxws:client id="personaService" serviceClass="com.mycompany.servicio.PersonaService" address="http://localhost:8086/wspersona/PersonaService" />
 
 
 </beans>
