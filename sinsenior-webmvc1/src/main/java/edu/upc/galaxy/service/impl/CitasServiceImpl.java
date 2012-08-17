@@ -8,11 +8,14 @@ import java.net.URL;
 import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
 import com.mycompany.servicio.PersonaService;
 import com.mycompany.servicio.PersonaServiceImplService;
+import com.vortexbird.spring.demo.mail.IEnviarMensajeSimpleMailMessage;
 
 import edu.upc.galaxy.dao.CitaDao;
 import edu.upc.galaxy.dao.impl.CitaDaoImpl;
@@ -37,6 +40,10 @@ public class CitasServiceImpl implements CitaService {
     @Override
     public void actualizar(Cita Cita) {
         log.info("Actualizando Cita");
+        BeanFactory beanFactory = new ClassPathXmlApplicationContext("/applicationContext.xml");
+        
+       
+        
         citaDao.actualizar(Cita);
     }
     @Override

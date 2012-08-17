@@ -14,8 +14,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Service;
+
+import com.vortexbird.spring.demo.mail.IEnviarMensajeSimpleMailMessage;
 
 /**
  *
@@ -33,24 +36,44 @@ public class InmuebleServiceImpl implements InmuebleService {
     @Override
     public Integer insertar(Inmueble Inmueble) {
         log.info("Creando Inmueble");
+        BeanFactory beanFactory = new ClassPathXmlApplicationContext("/applicationContext.xml");
+        
+        IEnviarMensajeSimpleMailMessage enviarMensajeSimpleMailMessage=(IEnviarMensajeSimpleMailMessage)beanFactory.getBean(IEnviarMensajeSimpleMailMessage.class);
+ 
+        
+        try {
+        	String mensaje;
+        	
+        	mensaje = "Estimado(a): " + Inmueble.getNumRazSocial() + "\n";
+        	mensaje = mensaje + "Un encargado se estará comunicando con ud. a los números " + Inmueble.getCelular() + " - " + Inmueble.getTelefono() + "\n";
+        	mensaje = mensaje + "Saludos," + "\n";
+        	mensaje = mensaje + "SINSENIOR CORP." + "\n";
+        	enviarMensajeSimpleMailMessage.enviarMensaje(Inmueble.getCorreo(), mensaje,"Venta-SINSENIOR");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return inmuebleDao.insertar(Inmueble);
     }
 
     @Override
     public Integer suscribir(inmueblesLista Inmueble) {
         log.info("Suscribir Inmueble");
-       /* BeanFactory fabricaDeBeans = new XmlBeanFactory(new FileSystemResource("src/main/resources/spring-context.xml"));
-
-
-
-        LectorDeMensajes lectorDeMensajes = (LectorDeMensajes) fabricaDeBeans.getBean("miLectorDeMensajes");
-
+        BeanFactory beanFactory = new ClassPathXmlApplicationContext("/applicationContext.xml");
+        
+        IEnviarMensajeSimpleMailMessage enviarMensajeSimpleMailMessage=(IEnviarMensajeSimpleMailMessage)beanFactory.getBean(IEnviarMensajeSimpleMailMessage.class);
+ 
+        
         try {
-			System.out.println("LECTOR MENSAJE "+ lectorDeMensajes.leer());
-		} catch (JMSException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}*/
+        	String mensaje;
+        	
+        	mensaje = "Estimado(a): " + Inmueble.getNumRazSocial() + "\n";
+        	mensaje = mensaje + "Mensualmente le estar[an llegando las novedades sobre inmuebles de acuerdo a las caracteristicas ingresadas." + "\n";
+        	mensaje = mensaje + "Saludos," + "\n";
+        	mensaje = mensaje + "SINSENIOR CORP." + "\n";
+        	enviarMensajeSimpleMailMessage.enviarMensaje(Inmueble.getCorreo(), mensaje,"Suscripcion-SINSENIOR");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return inmuebleDao.suscribir(Inmueble);
     }
 
