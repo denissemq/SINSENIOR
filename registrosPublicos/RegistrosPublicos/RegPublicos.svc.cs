@@ -21,8 +21,13 @@ namespace RegistrosPublicos
             PropiedadesBL proBL = new PropiedadesBL();
             String strPropiedades = String.Empty;
             List<Propiedades> listaProp = proBL.Buscar(nroDoc, "NATURAL").listaPropiedades;
-            foreach (Propiedades prop1 in listaProp) {
-                strPropiedades = strPropiedades + "¬" + prop1.tipoInmueble + " " + prop1.Direccion + " " + prop1.Distrito + " " + prop1.caracteristicas+"¬" ;
+
+            if (listaProp != null)
+            {
+                foreach (Propiedades prop1 in listaProp)
+                {
+                    strPropiedades = strPropiedades + "¬" + prop1.tipoInmueble + " " + prop1.Direccion + " " + prop1.Distrito + " " + prop1.caracteristicas + "¬";
+                }
             }
 
             return strPropiedades;
@@ -31,12 +36,16 @@ namespace RegistrosPublicos
         {
             PropiedadesBL proBL = new PropiedadesBL();
             String strPropiedades = String.Empty;
+            
             List<Propiedades> listaProp = proBL.Buscar(nroDoc, "JURIDICA").listaPropiedades;
-            foreach (Propiedades prop1 in listaProp)
-            {
-                strPropiedades = strPropiedades + "¬" + prop1.tipoInmueble + " " + prop1.Direccion + " " + prop1.Distrito + " " + prop1.caracteristicas + "¬";
-            }
 
+            if (listaProp != null)
+            {
+                foreach (Propiedades prop1 in listaProp)
+                {
+                    strPropiedades = strPropiedades + "¬" + prop1.tipoInmueble + " " + prop1.Direccion + " " + prop1.Distrito + " " + prop1.caracteristicas + "¬";
+                }
+            }
             return strPropiedades;
 
         }

@@ -35,6 +35,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ConsultarPersonaResponse }
+     * 
+     */
+    public ConsultarPersonaResponse createConsultarPersonaResponse() {
+        return new ConsultarPersonaResponse();
+    }
+
+    /**
      * Create an instance of {@link ConsultarPersona }
      * 
      */
@@ -48,14 +56,6 @@ public class ObjectFactory {
      */
     public Persona createPersona() {
         return new Persona();
-    }
-
-    /**
-     * Create an instance of {@link ConsultarPersonaResponse }
-     * 
-     */
-    public ConsultarPersonaResponse createConsultarPersonaResponse() {
-        return new ConsultarPersonaResponse();
     }
 
     /**

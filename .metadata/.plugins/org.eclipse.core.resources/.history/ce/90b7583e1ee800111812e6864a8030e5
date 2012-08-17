@@ -1,0 +1,22 @@
+package org.assembly;
+
+
+
+/**
+
+* @author emanuel
+
+*
+
+*/
+
+public interface LectorDeMensajes {
+
+
+
+void enviarUnMensaje();
+
+
+
+}
+

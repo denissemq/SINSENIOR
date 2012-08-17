@@ -1,0 +1,18 @@
+package org.assembly;
+
+
+
+import javax.jms.JMSException;
+
+
+
+public interface LectorDeMensajes {
+
+
+
+String leer() throws JMSException;
+
+
+
+}
+

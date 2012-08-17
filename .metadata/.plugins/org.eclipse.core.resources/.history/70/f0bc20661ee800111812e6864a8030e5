@@ -1,0 +1,47 @@
+
+package org.assembly;
+
+
+
+import javax.jms.JMSException;
+
+
+
+import org.sprin
+
+gframework.beans.factory.BeanFactory;
+
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+
+import org.springframework.core.io.FileSystemResource;
+
+
+
+/**
+
+* Hello world!
+
+*
+
+*/
+
+public class AppLector
+
+{
+
+ public static void main( String[] args ) throws JMSException
+
+ {
+
+  BeanFactory fabricaDeBeans = new XmlBeanFactory(new FileSystemResource("src/main/resources/spring-context.xml"));
+
+
+
+  LectorDeMensajes lectorDeMensajes = (LectorDeMensajes) fabricaDeBeans.getBean("miLectorDeMensajes");
+
+  System.out.println(lectorDeMensajes.leer());
+
+ }
+
+}
+

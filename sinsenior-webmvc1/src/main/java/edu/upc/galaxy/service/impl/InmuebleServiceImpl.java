@@ -7,9 +7,14 @@ import edu.upc.galaxy.entity.Inmueble;
 import edu.upc.galaxy.entity.inmueblesLista;
 import edu.upc.galaxy.service.InmuebleService;
 import java.util.List;
+
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Service;
 
 /**
@@ -34,6 +39,18 @@ public class InmuebleServiceImpl implements InmuebleService {
     @Override
     public Integer suscribir(inmueblesLista Inmueble) {
         log.info("Suscribir Inmueble");
+       /* BeanFactory fabricaDeBeans = new XmlBeanFactory(new FileSystemResource("src/main/resources/spring-context.xml"));
+
+
+
+        LectorDeMensajes lectorDeMensajes = (LectorDeMensajes) fabricaDeBeans.getBean("miLectorDeMensajes");
+
+        try {
+			System.out.println("LECTOR MENSAJE "+ lectorDeMensajes.leer());
+		} catch (JMSException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
         return inmuebleDao.suscribir(Inmueble);
     }
 

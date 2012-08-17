@@ -89,8 +89,11 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("            <div class=\"right\" style=\"color:white;line-height: 40px;\">\n");
       out.write("            Bienvenido ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${credential.correo}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write(" | <a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${credential.nombre}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write(' ');
+      out.write(' ');
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${credential.apellidos}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("  | <a href=\"");
       if (_jspx_meth_c_005furl_005f5(_jspx_page_context))
         return;
       out.write("\">Salir</a>\n");
@@ -213,7 +216,7 @@ public final class header_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f5 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
     _jspx_th_c_005furl_005f5.setPageContext(_jspx_page_context);
     _jspx_th_c_005furl_005f5.setParent(null);
-    // /WEB-INF/views/layout/header.jsp(20,55) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/views/layout/header.jsp(20,81) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005furl_005f5.setValue("/pages/usuarios/logout");
     int _jspx_eval_c_005furl_005f5 = _jspx_th_c_005furl_005f5.doStartTag();
     if (_jspx_th_c_005furl_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

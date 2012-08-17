@@ -994,7 +994,7 @@ public final class venta_jsp extends org.apache.jasper.runtime.HttpJspBase
             out.write("        </div>\r\n");
             out.write("        <div class=\"actions\" style=\"margin-left: 160px;\">\r\n");
             out.write("            <input name=\"\" value=\"Save\" type=\"submit\" class=\"btn btn-primary\" onclick=\"javascript:return validateInfo()\">\r\n");
-            out.write("            <a style=\"margin-left: 5px;\" href=\"");
+            out.write("            <a  class=\"btn btn-primary\" style=\"margin-left: 5px;\" href=\"");
             if (_jspx_meth_c_005furl_005f0(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
               return;
             out.write("\">Cancelar</a>\r\n");
@@ -1552,7 +1552,7 @@ public final class venta_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f0 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
     _jspx_th_c_005furl_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005furl_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/views/inmuebles/venta.jsp(370,47) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/views/inmuebles/venta.jsp(370,72) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005furl_005f0.setValue("/pages/usuarios/logout");
     int _jspx_eval_c_005furl_005f0 = _jspx_th_c_005furl_005f0.doStartTag();
     if (_jspx_th_c_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

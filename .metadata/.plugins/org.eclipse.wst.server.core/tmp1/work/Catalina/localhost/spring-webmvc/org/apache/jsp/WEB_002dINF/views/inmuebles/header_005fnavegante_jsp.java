@@ -83,12 +83,6 @@ public final class header_005fnavegante_jsp extends org.apache.jasper.runtime.Ht
       out.write("\n");
       out.write("\n");
       out.write("            <div class=\"right\" style=\"color:white;line-height: 40px;\">\n");
-      out.write("            Bienvenido ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${credential.correo}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write(" | <a href=\"");
-      if (_jspx_meth_c_005furl_005f4(_jspx_page_context))
-        return;
-      out.write("\">Salir</a>\n");
       out.write("        </div>\n");
       out.write("        </div>\n");
       out.write("    </div><!-- /topbar-inner -->\n");
@@ -178,25 +172,6 @@ public final class header_005fnavegante_jsp extends org.apache.jasper.runtime.Ht
       return true;
     }
     _005fjspx_005ftagPool_005fc_005furl_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f3);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005furl_005f4(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:url
-    org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f4 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
-    _jspx_th_c_005furl_005f4.setPageContext(_jspx_page_context);
-    _jspx_th_c_005furl_005f4.setParent(null);
-    // /WEB-INF/views/inmuebles/header_navegante.jsp(18,55) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005furl_005f4.setValue("/pages/usuarios/logout");
-    int _jspx_eval_c_005furl_005f4 = _jspx_th_c_005furl_005f4.doStartTag();
-    if (_jspx_th_c_005furl_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005furl_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f4);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005furl_005fvalue_005fnobody.reuse(_jspx_th_c_005furl_005f4);
     return false;
   }
 }

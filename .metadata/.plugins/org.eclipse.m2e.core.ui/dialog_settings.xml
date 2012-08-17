@@ -23,6 +23,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\USUARIO\SINSENIOR\creadorDeMensajes\pom.xml"/>
+			<item value="C:\Users\USUARIO\SINSENIOR\sinsenior-webmvc1"/>
 			<item value="C:\Users\USUARIO\SINSENIOR"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -35,12 +37,17 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
+			<item value="org.assembly"/>
 			<item value="UPC"/>
 		</list>
 		<list key="package">
+			<item value="org.assembly.lectorDeMensajes"/>
+			<item value="org.assembly.creadorDeMensajes"/>
 			<item value="UPC.Sinsenior"/>
 		</list>
 		<list key="artifactId">
+			<item value="lectorDeMensajes"/>
+			<item value="creadorDeMensajes"/>
 			<item value="Sinsenior"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -56,9 +63,10 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="C:\Users\USUARIO\Downloads\sinsenior-webmvc1 (1)\sinsenior-webmvc1"/>
+			<item value="C:\Users\USUARIO\Downloads\denissemq-corespring-55894f6\denissemq-corespring-55894f6\15-jms-1-solution"/>
 			<item value="C:\Users\USUARIO\SINSENIOR\sinsenior-webmvc1"/>
 			<item value="C:\Users\USUARIO\SINSENIOR\wscliente"/>
+			<item value="C:\Users\USUARIO\Downloads\sinsenior-webmvc1 (1)\sinsenior-webmvc1"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

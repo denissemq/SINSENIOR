@@ -1,0 +1,40 @@
+<?XML:NAMESPACE PREFIX = [default] http://maven.apache.org/POM/4.0.0 NS = "http://maven.apache.org/POM/4.0.0" /><beans xmlns="http://www.springframework.org/schema/beans" schemalocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd" xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+
+ <bean id=activemq.connectionfactory class=org.apache.activemq.ActiveMQConnectionFactory>
+
+     <property name="brokerURL" value="tcp://127.0.0.1:61616">
+
+ </property></bean>
+
+
+
+<bean id=activemq.destination class=org.apache.activemq.command.ActiveMQQueue>
+
+<constructor-arg value="esteDestinoEsUnaCola" index="0">
+
+</constructor-arg></bean>
+
+
+
+<bean id=activemq.jmsTemplate class=org.springframework.jms.core.JmsTemplate>
+
+<property name="connectionFactory" ref="activemq.connectionfactory"></property>
+
+</bean>
+
+
+
+<bean id=miEnviadorDeMensajes class=org.assembly.EnviadorDeMensajesImpl>
+
+   <property name="jmsTemplate" ref="activemq.jmsTemplate">
+
+   <property name="destino" ref="activemq.destination">
+
+</property></property></bean>
+
+
+
+</beans>
+

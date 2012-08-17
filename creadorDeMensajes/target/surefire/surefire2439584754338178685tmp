@@ -1,0 +1,29 @@
+#surefire
+#Fri Aug 17 11:26:03 COT 2012
+testClassesDirectory=D\:\\UPC_DSD\\creadorDeMensajes\\target\\test-classes
+classPathUrl.4=C\:\\Documents and Settings\\dmarquez.ATC\\.m2\\repository\\org\\apache\\activemq\\activemq-all\\5.4.2\\activemq-all-5.4.2.jar
+classPathUrl.3=C\:\\Documents and Settings\\dmarquez.ATC\\.m2\\repository\\commons-logging\\commons-logging\\1.1.1\\commons-logging-1.1.1.jar
+classPathUrl.2=C\:\\Documents and Settings\\dmarquez.ATC\\.m2\\repository\\org\\springframework\\spring\\2.5.6.SEC02\\spring-2.5.6.SEC02.jar
+useManifestOnlyJar=true
+classPathUrl.1=D\:\\UPC_DSD\\creadorDeMensajes\\target\\classes
+reportsDirectory=D\:\\UPC_DSD\\creadorDeMensajes\\target\\surefire-reports
+classPathUrl.0=D\:\\UPC_DSD\\creadorDeMensajes\\target\\test-classes
+dirscanner.0=directoryScannerOptions
+providerConfiguration=org.apache.maven.surefire.junit.JUnit3Provider
+testSuiteDefinitionTestSourceDirectory=D\:\\UPC_DSD\\creadorDeMensajes\\src\\test\\java
+surefireClassPathUrl.1=C\:\\Documents and Settings\\dmarquez.ATC\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.7.1\\surefire-api-2.7.1.jar
+surefireClassPathUrl.0=C\:\\Documents and Settings\\dmarquez.ATC\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit3\\2.7.1\\surefire-junit3-2.7.1.jar
+report.2=org.apache.maven.surefire.report.XMLReporter
+useSystemClassLoader=true
+report.1=org.apache.maven.surefire.report.BriefFileReporter
+report.0=org.apache.maven.surefire.report.ForkingConsoleReporter
+excludes0=**/*$*
+isTrimStackTrace=true
+dirscanner.0.params=D\:\\UPC_DSD\\creadorDeMensajes\\target\\test-classes|[**/Test*.java, **/*Test.java, **/*TestCase.java]|[**/*$*]
+enableAssertions=true
+includes2=**/*TestCase.java
+failIfNoTests=false
+includes1=**/*Test.java
+dirscanner.0.types=java.io.File|java.util.ArrayList|java.util.ArrayList
+includes0=**/Test*.java
+childDelegation=false

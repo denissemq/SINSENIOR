@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+
+
+        <jaxws:client id="personaService" serviceClass="com.mycompany.servicio.PersonaService"
+<<<<<<< HEAD
+                address="http://localhost:8086/wspersona/PersonaService" />
+=======
+                address="http://localhost:8087/wspersona/PersonaService" />
+>>>>>>> 74eea3a6b3d863bb64df89d620e35f3a4c36de2a
+
+
+</beans>

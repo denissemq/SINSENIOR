@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d5721717-0443-4d1b-ad03-eaee64e938c2" name="USUARIO@DENISSE 2012-08-17 12:54:33" runUser="DENISSE\USUARIO" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8903f2c7-ae1b-4e15-a6aa-b39c034b0735">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="USUARIO_DENISSE 2012-08-17 12_54_33" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-08-17T12:54:33.1069208-05:00" queuing="2012-08-17T12:54:38.0252021-05:00" start="2012-08-17T12:54:38.4422260-05:00" finish="2012-08-17T12:55:11.4451137-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="2" executed="2" passed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DENISSE" outcome="Error" timestamp="2012-08-17T12:55:11.4131118-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ValidarpersonaJ" storage="c:\users\usuario\sinsenior\infocorp\test\bin\debug\test.dll" id="c5e83fa0-c72c-4316-f41d-8dd3adc8ca86">
+      <Execution id="dbc0e48e-06fe-43b5-97a4-f935cd065fdc" />
+      <TestMethod codeBase="C:/Users/USUARIO/SINSENIOR/INFOCORP/tEST/bin/Debug/tEST.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RegInfocorp.Test, tEST, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidarpersonaJ" />
+    </UnitTest>
+    <UnitTest name="ValidarpersonaN" storage="c:\users\usuario\sinsenior\infocorp\test\bin\debug\test.dll" id="3c197a76-0e74-dfd4-96fd-d8d058c91b32">
+      <Execution id="442808d2-7245-4716-911d-4761b62a7c43" />
+      <TestMethod codeBase="C:/Users/USUARIO/SINSENIOR/INFOCORP/tEST/bin/Debug/tEST.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RegInfocorp.Test, tEST, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidarpersonaN" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c5e83fa0-c72c-4316-f41d-8dd3adc8ca86" executionId="dbc0e48e-06fe-43b5-97a4-f935cd065fdc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3c197a76-0e74-dfd4-96fd-d8d058c91b32" executionId="442808d2-7245-4716-911d-4761b62a7c43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="dbc0e48e-06fe-43b5-97a4-f935cd065fdc" testId="c5e83fa0-c72c-4316-f41d-8dd3adc8ca86" testName="ValidarpersonaJ" computerName="DENISSE" duration="00:00:01.1515302" startTime="2012-08-17T12:54:38.6512380-05:00" endTime="2012-08-17T12:54:40.7533582-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbc0e48e-06fe-43b5-97a4-f935cd065fdc">
+    </UnitTestResult>
+    <UnitTestResult executionId="442808d2-7245-4716-911d-4761b62a7c43" testId="3c197a76-0e74-dfd4-96fd-d8d058c91b32" testName="ValidarpersonaN" computerName="DENISSE" duration="00:00:30.6527532" startTime="2012-08-17T12:54:40.7913604-05:00" endTime="2012-08-17T12:55:11.4441136-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="442808d2-7245-4716-911d-4761b62a7c43">
+    </UnitTestResult>
+  </Results>
+</TestRun>

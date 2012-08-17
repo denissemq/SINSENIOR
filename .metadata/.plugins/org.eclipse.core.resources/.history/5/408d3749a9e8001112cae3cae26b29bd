@@ -1,0 +1,48 @@
+package edu.upc.galaxy.org.assembly;
+
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.MapMessage;
+import javax.jms.Message;
+import javax.jms.Session;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
+
+
+
+
+public class LectorDeMensajesImpl implements LectorDeMensajes {
+
+
+
+private JmsTemplate jmsTemplate = null;
+
+
+
+// usado por spring para inyectar el jms template.
+
+public void setJmsTemplate(JmsTemplate jmsTemplate) {
+
+this.jmsTemplate = jmsTemplate;
+
+}
+
+
+
+
+
+
+public String leer() throws JMSException {
+
+MapMessage mensaje = (MapMessage) jmsTemplate.receive();
+
+return mensaje.getString("mensaje");
+
+}
+
+
+
+
+
+}
+
