@@ -23,7 +23,7 @@ namespace RegInfocorp
 
             String Caracteristicas = reader.ReadToEnd();
 
-            Assert.AreEqual(Caracteristicas, "\";BANCO FALABELLA 01 Enero 2011 8000\"");
+            Assert.AreEqual(Caracteristicas, "\"¬Entidad: BANCO FALABELLA desde: 01 Enero 2011 Monto:8000¬\"");
 
 
         }
@@ -37,7 +37,7 @@ namespace RegInfocorp
 
             String Caracteristicas = reader.ReadToEnd();
 
-            Assert.AreEqual(Caracteristicas, "\";BANCO FALABELLA 01 Enero 2010 5000;RIPLEY 02 Enero 2010 3600\"");
+            Assert.AreEqual(Caracteristicas, "\"¬Entidad: BANCO FALABELLA desde: 01 Enero 2010 Monto:5000¬¬Entidad: RIPLEY desde: 02 Enero 2010 Monto:3600¬\"");
 
 
         }

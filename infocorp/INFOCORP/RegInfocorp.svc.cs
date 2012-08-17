@@ -22,7 +22,7 @@ namespace INFOCORP
             String strPropiedades = String.Empty;
             List<Deudas> listaProp = proBL.Buscar(nroDoc, "NATURAL").listaPropiedades;
             foreach (Deudas prop1 in listaProp) {
-                strPropiedades = strPropiedades + ";" + prop1.Entidad + " " + prop1.FechaInicio + " " + prop1.Monto;
+                strPropiedades = strPropiedades + "¬Entidad: " + prop1.Entidad + " desde: " + prop1.FechaInicio + " Monto:" + prop1.Monto + "¬";
             }
 
             return strPropiedades;
@@ -34,7 +34,7 @@ namespace INFOCORP
             List<Deudas> listaProp = proBL.Buscar(nroDoc, "JURIDICA").listaPropiedades;
             foreach (Deudas prop1 in listaProp)
             {
-                strPropiedades = strPropiedades + ";" + prop1.Entidad + " " + prop1.FechaInicio + " " + prop1.Monto;
+                strPropiedades = strPropiedades + "¬Entidad: " + prop1.Entidad + " desde: " + prop1.FechaInicio + " Monto:" + prop1.Monto + "¬";
             }
 
             return strPropiedades;
