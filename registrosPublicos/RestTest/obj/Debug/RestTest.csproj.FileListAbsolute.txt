@@ -8,3 +8,8 @@ C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RestTest\bin\
 C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RestTest\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RestTest\obj\Debug\RestTest.dll
 C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RestTest\obj\Debug\RestTest.pdb
+C:\Users\USUARIO\SINSENIOR\RegistrosPublicos\RestTest\bin\Debug\RestTest.dll
+C:\Users\USUARIO\SINSENIOR\RegistrosPublicos\RestTest\bin\Debug\RestTest.pdb
+C:\Users\USUARIO\SINSENIOR\RegistrosPublicos\RestTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\SINSENIOR\RegistrosPublicos\RestTest\obj\Debug\RestTest.dll
+C:\Users\USUARIO\SINSENIOR\RegistrosPublicos\RestTest\obj\Debug\RestTest.pdb

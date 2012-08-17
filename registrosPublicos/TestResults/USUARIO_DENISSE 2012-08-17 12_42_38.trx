@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1314bf31-3e79-491d-8f00-78c149b4f6f5" name="USUARIO@DENISSE 2012-08-17 12:42:38" runUser="DENISSE\USUARIO" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="c995d006-9a5a-4554-a93a-b573a141f571">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="USUARIO_DENISSE 2012-08-17 12_42_38" />
+  </TestSettings>
+  <Times creation="2012-08-17T12:42:38.1570280-05:00" queuing="2012-08-17T12:42:55.3600120-05:00" start="2012-08-17T12:42:56.5180782-05:00" finish="2012-08-17T12:43:10.3458691-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ValidarpersonaN" storage="c:\users\usuario\sinsenior\registrospublicos\resttest\bin\debug\resttest.dll" id="0e0b68cd-c71c-60c2-a9cf-ebbd9968489f">
+      <Execution id="8268c659-51ce-4b23-8576-7dbbe246f8a4" />
+      <TestMethod codeBase="C:/Users/USUARIO/SINSENIOR/RegistrosPublicos/RestTest/bin/Debug/RestTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RestTest.RegPublicosTest, RestTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidarpersonaN" />
+    </UnitTest>
+    <UnitTest name="ValidarpersonaJ" storage="c:\users\usuario\sinsenior\registrospublicos\resttest\bin\debug\resttest.dll" id="fe0a106e-72a0-bac8-d1e3-d4c7186742e7">
+      <Execution id="d857dae2-8dfd-445b-91bd-8c0ef549aaf2" />
+      <TestMethod codeBase="C:/Users/USUARIO/SINSENIOR/RegistrosPublicos/RestTest/bin/Debug/RestTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="RestTest.RegPublicosTest, RestTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidarpersonaJ" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0e0b68cd-c71c-60c2-a9cf-ebbd9968489f" executionId="8268c659-51ce-4b23-8576-7dbbe246f8a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe0a106e-72a0-bac8-d1e3-d4c7186742e7" executionId="d857dae2-8dfd-445b-91bd-8c0ef549aaf2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8268c659-51ce-4b23-8576-7dbbe246f8a4" testId="0e0b68cd-c71c-60c2-a9cf-ebbd9968489f" testName="ValidarpersonaN" computerName="DENISSE" duration="00:00:08.6732695" startTime="2012-08-17T12:42:57.0321076-05:00" endTime="2012-08-17T12:43:09.7038324-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8268c659-51ce-4b23-8576-7dbbe246f8a4">
+    </UnitTestResult>
+    <UnitTestResult executionId="d857dae2-8dfd-445b-91bd-8c0ef549aaf2" testId="fe0a106e-72a0-bac8-d1e3-d4c7186742e7" testName="ValidarpersonaJ" computerName="DENISSE" duration="00:00:00.0049217" startTime="2012-08-17T12:43:09.7278338-05:00" endTime="2012-08-17T12:43:09.7508351-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d857dae2-8dfd-445b-91bd-8c0ef549aaf2">
+    </UnitTestResult>
+  </Results>
+</TestRun>

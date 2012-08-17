@@ -8,3 +8,8 @@ C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RegistrosPubl
 C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RegistrosPublicos\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RegistrosPublicos\obj\Debug\RegistrosPublicos.dll
 C:\Documents and Settings\dmarquez.ATC\SINSENIOR\RegistrosPublicos\RegistrosPublicos\obj\Debug\RegistrosPublicos.pdb
+C:\Users\USUARIO\SINSENIOR\RegistrosPublicos\RegistrosPublicos\bin\RegistrosPublicos.dll
+C:\Users\USUARIO\SINSENIOR\RegistrosPublicos\RegistrosPublicos\bin\RegistrosPublicos.pdb
+C:\Users\USUARIO\SINSENIOR\RegistrosPublicos\RegistrosPublicos\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\USUARIO\SINSENIOR\RegistrosPublicos\RegistrosPublicos\obj\Debug\RegistrosPublicos.dll
+C:\Users\USUARIO\SINSENIOR\RegistrosPublicos\RegistrosPublicos\obj\Debug\RegistrosPublicos.pdb

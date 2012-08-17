@@ -23,7 +23,7 @@ namespace RestTest
 
            String Caracteristicas = reader.ReadToEnd();
 
-                Assert.AreEqual(Caracteristicas,"\";AV. LA MARINA 3205 SAN MIGUEL CASA 2 HABITACIONES, 2 BAÑOS, 2 PISOS;AV. ANDRES REYES 437 SAN ISIDRO DEPARTAMENTO 5 HABITACIONES, 2 BAÑOS, 6 PISOS\"");
+           Assert.AreEqual(Caracteristicas, "\"¬CASA AV. LA MARINA 3205 SAN MIGUEL 2 HABITACIONES, 2 BAÑOS, 2 PISOS¬¬DEPARTAMENTO AV. ANDRES REYES 437 SAN ISIDRO 5 HABITACIONES, 2 BAÑOS, 6 PISOS¬\"");
          
 
         }
@@ -37,7 +37,7 @@ namespace RestTest
 
             String Caracteristicas = reader.ReadToEnd();
 
-            Assert.AreEqual(Caracteristicas, "\";JR. AREQUIPA 3866 SAN MARTIN DE PORRES CASA 2 HABITACIONES, 2 BAÑOS, 4 PISOS\"");
+            Assert.AreEqual(Caracteristicas, "\"¬CASA JR. AREQUIPA 3866 SAN MARTIN DE PORRES 2 HABITACIONES, 2 BAÑOS, 4 PISOS¬\"");
 
 
         }
