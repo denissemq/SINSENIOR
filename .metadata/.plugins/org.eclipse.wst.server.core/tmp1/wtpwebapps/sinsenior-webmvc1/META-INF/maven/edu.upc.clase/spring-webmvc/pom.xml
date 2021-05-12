@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.version>3.0.5.RELEASE</spring.version>
+        <spring.version>5.2.10.RELEASE</spring.version>
         <cxf.version>2.3.0</cxf.version>
         <tiles.version>2.1.4</tiles.version>
         <netbeans.hint.deploy.server>Tomcat</netbeans.hint.deploy.server>
